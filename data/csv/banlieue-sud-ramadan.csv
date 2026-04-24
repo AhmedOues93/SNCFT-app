@@ -1,0 +1,49 @@
+trainNumber,direction,station,time
+101,Tunis → Borj Cedria,Tunis,04:40
+101,Tunis → Borj Cedria,Sayda Manoubia,04:44
+101,Tunis → Borj Cedria,Ennajah,04:46
+101,Tunis → Borj Cedria,Ezzouhour 2,04:51
+101,Tunis → Borj Cedria,Elhryria,04:53
+101,Tunis → Borj Cedria,Bougatfa,04:55
+101,Tunis → Borj Cedria,Borj Cedria,05:15
+103,Tunis → Borj Cedria,Tunis,05:10
+103,Tunis → Borj Cedria,Sayda Manoubia,05:14
+103,Tunis → Borj Cedria,Ennajah,05:16
+103,Tunis → Borj Cedria,Ezzouhour 2,05:21
+103,Tunis → Borj Cedria,Elhryria,05:23
+103,Tunis → Borj Cedria,Bougatfa,05:25
+103,Tunis → Borj Cedria,Borj Cedria,05:45
+201,Borj Cedria → Tunis,Borj Cedria,05:00
+201,Borj Cedria → Tunis,Bougatfa,05:02
+201,Borj Cedria → Tunis,Elhryria,05:04
+201,Borj Cedria → Tunis,Ezzouhour 2,05:08
+201,Borj Cedria → Tunis,Ennajah,05:10
+201,Borj Cedria → Tunis,Sayda Manoubia,05:13
+201,Borj Cedria → Tunis,Tunis,05:20
+203,Borj Cedria → Tunis,Borj Cedria,05:30
+203,Borj Cedria → Tunis,Bougatfa,05:32
+203,Borj Cedria → Tunis,Elhryria,05:34
+203,Borj Cedria → Tunis,Ezzouhour 2,05:38
+203,Borj Cedria → Tunis,Ennajah,05:40
+203,Borj Cedria → Tunis,Sayda Manoubia,05:43
+203,Borj Cedria → Tunis,Tunis,05:50
+301,Tunis → Erriadh,Tunis,05:40
+301,Tunis → Erriadh,Rades,05:48
+301,Tunis → Erriadh,Hammam Lif,05:58
+301,Tunis → Erriadh,Borj Cedria,06:12
+301,Tunis → Erriadh,Erriadh,06:20
+303,Tunis → Erriadh,Tunis,06:20
+303,Tunis → Erriadh,Rades,06:28
+303,Tunis → Erriadh,Hammam Lif,06:38
+303,Tunis → Erriadh,Borj Cedria,06:52
+303,Tunis → Erriadh,Erriadh,07:00
+401,Erriadh → Tunis,Erriadh,05:25
+401,Erriadh → Tunis,Borj Cedria,05:32
+401,Erriadh → Tunis,Hammam Lif,05:45
+401,Erriadh → Tunis,Rades,05:55
+401,Erriadh → Tunis,Tunis,06:04
+403,Erriadh → Tunis,Erriadh,06:05
+403,Erriadh → Tunis,Borj Cedria,06:12
+403,Erriadh → Tunis,Hammam Lif,06:25
+403,Erriadh → Tunis,Rades,06:35
+403,Erriadh → Tunis,Tunis,06:44
