@@ -30,6 +30,10 @@ export interface RouteResult {
   departureTime: string;
   arrivalTime: string;
   durationMinutes: number;
+  waitingMinutes: number;
+  walkingMinutes: number;
+  departureStation: string;
+  arrivalStation: string;
 }
 
 export interface StationInfo {

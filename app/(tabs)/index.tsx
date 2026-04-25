@@ -1,16 +1,7 @@
 import * as Location from 'expo-location';
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import {
-  Alert,
-  Image,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import { Alert, Image, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
 import { Card } from '@/components/Card';
@@ -20,19 +11,14 @@ import { haversineDistanceKm, estimateWalkingMinutes } from '@/lib/location';
 import { useSearch } from '@/lib/search-context';
 import { dateToMinuteOfDay, findNextTrips } from '@/lib/time';
 
-const formatDateInput = (date: Date): string => {
-  const yyyy = date.getFullYear();
-  const mm = `${date.getMonth() + 1}`.padStart(2, '0');
-  const dd = `${date.getDate()}`.padStart(2, '0');
-  const hh = `${date.getHours()}`.padStart(2, '0');
-  const min = `${date.getMinutes()}`.padStart(2, '0');
-  return `${yyyy}-${mm}-${dd}T${hh}:${min}`;
-};
+const HOURS = Array.from({ length: 24 }, (_, i) => i.toString().padStart(2, '0'));
+const MINUTES = Array.from({ length: 60 }, (_, i) => i.toString().padStart(2, '0'));
 
 export default function SearchScreen() {
   const router = useRouter();
-  const { search, setSearch, setResults } = useSearch();
-  const [dateText, setDateText] = useState(formatDateInput(search.date));
+  const { search, setSearch, setResults, setSelectedResult } = useSearch();
+  const [selectedHour, setSelectedHour] = useState(search.date.getHours().toString().padStart(2, '0'));
+  const [selectedMinute, setSelectedMinute] = useState(search.date.getMinutes().toString().padStart(2, '0'));
   const [manualWalkingText, setManualWalkingText] = useState(String(search.walkingMinutes || ''));
 
   const arrivalOptions = useMemo(
@@ -82,27 +68,32 @@ export default function SearchScreen() {
   };
 
   const runSearch = async () => {
-    const date = new Date(dateText);
-    if (Number.isNaN(date.getTime())) {
-      Alert.alert('Date invalide', 'Utilisez le format AAAA-MM-JJTHH:mm, ex: 2026-04-24T08:30.');
-      return;
-    }
-
     if (!arrivalOptions.find((item) => item.name === search.arrival)) {
-      Alert.alert('Trajet invalide', 'Ce trajet n\'est pas disponible sur les lignes Banlieue Sud.');
+      Alert.alert('Trajet invalide', "Ce trajet n'est pas disponible sur les lignes Banlieue Sud.");
       return;
     }
 
     const manualWalking = Number(manualWalkingText || '0');
     const walkingMinutes = Number.isNaN(manualWalking) ? 0 : Math.max(0, manualWalking);
+
+    const date = new Date(search.date);
+    date.setHours(Number(selectedHour), Number(selectedMinute), 0, 0);
+
     const earliestMinute = dateToMinuteOfDay(date) + walkingMinutes;
 
     try {
       const trips = await loadTripsForMarche(search.marche);
-      const results = findNextTrips(trips, search.departure, search.arrival, earliestMinute);
+      const nextTrips = findNextTrips(
+        trips,
+        search.departure,
+        search.arrival,
+        earliestMinute,
+        walkingMinutes,
+      );
 
       setSearch({ ...search, date, walkingMinutes });
-      setResults(results);
+      setResults(nextTrips);
+      setSelectedResult(nextTrips[0] ?? null);
       router.push('/(tabs)/resultats');
     } catch {
       Alert.alert('Erreur de chargement', 'Impossible de charger les horaires CSV.');
@@ -115,7 +106,7 @@ export default function SearchScreen() {
       <Image source={require('@/assets/images/train-hero.jpg')} style={styles.hero} />
 
       <Card>
-        <Text style={styles.title}>Recherche d'itinéraire</Text>
+        <Text style={styles.title}>Recherche d&apos;itinéraire</Text>
 
         <Text style={styles.label}>Départ</Text>
         <Picker
@@ -141,8 +132,23 @@ export default function SearchScreen() {
           ))}
         </Picker>
 
-        <Text style={styles.label}>Date et heure (format local)</Text>
-        <TextInput value={dateText} onChangeText={setDateText} style={styles.input} autoCapitalize="none" />
+        <Text style={styles.label}>Heure de départ souhaitée</Text>
+        <View style={styles.timeRow}>
+          <View style={styles.timePickerWrap}>
+            <Picker selectedValue={selectedHour} onValueChange={setSelectedHour}>
+              {HOURS.map((hour) => (
+                <Picker.Item key={hour} label={`${hour} h`} value={hour} />
+              ))}
+            </Picker>
+          </View>
+          <View style={styles.timePickerWrap}>
+            <Picker selectedValue={selectedMinute} onValueChange={setSelectedMinute}>
+              {MINUTES.map((minute) => (
+                <Picker.Item key={minute} label={`${minute} min`} value={minute} />
+              ))}
+            </Picker>
+          </View>
+        </View>
 
         <Text style={styles.label}>Marche</Text>
         <Picker selectedValue={search.marche} onValueChange={(value) => setSearch({ ...search, marche: value })}>
@@ -155,7 +161,7 @@ export default function SearchScreen() {
           <Text style={styles.secondaryText}>Utiliser ma position</Text>
         </Pressable>
 
-        <Text style={styles.label}>Temps de marche (minutes)</Text>
+        <Text style={styles.label}>Temps de marche manuel (minutes)</Text>
         <TextInput
           value={manualWalkingText}
           onChangeText={setManualWalkingText}
@@ -173,21 +179,34 @@ export default function SearchScreen() {
   );
 }
 
-const styles = StyleSheet.create(    <Pions = get'   mns = genp<Text styl( backsAsyncColonp<'#eef6ff' },   mns    p<Tepadd   tyl6,epadd   Bottom: 30 },   ="cop<Tewidthtyl5);
-heigh p<42 })Sud.Selfp<'c   er'})}>
-ginBottom: 12 },   <Carp<Tewidthty'100%';
-heigh p<17);
-borderRadiustyl6,e}>
-ginBottom: 16 },    d'itp<Texns S   30.2 }xns Weigh p<'700';
-colonp<'#0b5ed7'})}>
-ginBottom: 12 },   marchp<Texns S   3014;
-colonp<'#334155'})}>
-ginTop: 8 },   >
-
-  :onst neborderWidthtyl,st neborderColonp<'#cbd5e1',st neborderRadiustyl2,st nepadd   Horizns =ltyl2,st nepadd   Vharic=ltyl0,st ne}>
-ginTop: 6,st },   ess={runSep<TebacksAsyncColonp<'#0b5ed7'})padd   tyl4;
-borderRadiustyl2})}>
-ginTop: 16 },   uver les prp<Tecolonp<'#fff', dateASud.p<'c   er'})xns Weigh p<'700' },   Press={apply:onst nebacksAsyncColonp<'#198754',st nepadd   tyl2,st neborderRadiustyl2,st ne}>
-ginTop: 10,st },   tiliser ma pop<Tecolonp<'#fff', dateASud.p<'c   er'})xns Weigh p<'600' },   _DISCLAIMEp<Tecolonp<'#475569'})xns S   3012})}>
-ginTop: 4, dateASud.p<'c   er' }, 
-   
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#eef6ff' },
+  content: { padding: 16, paddingBottom: 30 },
+  logo: { width: 150, height: 42, alignSelf: 'center', marginBottom: 12 },
+  hero: { width: '100%', height: 170, borderRadius: 16, marginBottom: 16 },
+  title: { fontSize: 22, fontWeight: '700', color: '#0b5ed7', marginBottom: 12 },
+  label: { fontSize: 14, color: '#334155', marginTop: 8 },
+  timeRow: { flexDirection: 'row', gap: 10, marginTop: 6 },
+  timePickerWrap: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: '#cbd5e1',
+    borderRadius: 12,
+    overflow: 'hidden',
+    backgroundColor: '#fff',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#cbd5e1',
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    marginTop: 6,
+    backgroundColor: '#fff',
+  },
+  primaryBtn: { backgroundColor: '#0b5ed7', padding: 14, borderRadius: 12, marginTop: 16 },
+  primaryText: { color: '#fff', textAlign: 'center', fontWeight: '700' },
+  secondaryBtn: { backgroundColor: '#198754', padding: 12, borderRadius: 12, marginTop: 10 },
+  secondaryText: { color: '#fff', textAlign: 'center', fontWeight: '600' },
+  disclaimer: { color: '#475569', fontSize: 12, marginTop: 4, textAlign: 'center' },
+});

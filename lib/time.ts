@@ -16,6 +16,7 @@ export const findNextTrips = (
   departureStation: string,
   arrivalStation: string,
   earliestMinute: number,
+  walkingMinutes: number,
 ): RouteResult[] => {
   const normalizedEarliestMinute = ((earliestMinute % (24 * 60)) + 24 * 60) % (24 * 60);
 
@@ -43,6 +44,10 @@ export const findNextTrips = (
         departureTime: departure.time,
         arrivalTime: arrival.time,
         durationMinutes: calculateDuration(departure.time, arrival.time),
+        waitingMinutes: departureMinute - normalizedEarliestMinute,
+        walkingMinutes,
+        departureStation,
+        arrivalStation,
       } satisfies RouteResult;
     })
     .filter((trip): trip is RouteResult => trip !== null)
