@@ -1,9 +1,8 @@
-import * as Location from 'expo-location';
 import { useRouter } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
 import {
-  Alert,
   Image,
+  Modal,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -11,144 +10,108 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
 
 import { Card } from '@/components/Card';
-import {
-  APP_DISCLAIMER,
-  DIRECTIONS_BY_TRAVEL_DIRECTION,
-  MARCHES,
-  SNCFT_COLORS,
-  STATIONS,
-  TRAVEL_DIRECTIONS,
-} from '@/lib/constants';
-import { createFavoriteId, loadFavorites, saveFavorites } from '@/lib/favorites';
-import { haversineDistanceKm, estimateWalkingMinutes } from '@/lib/location';
+import { APP_DISCLAIMER, MARCHES, SNCFT_COLORS } from '@/lib/constants';
+import { createFavoriteId, loadFavorites, loadRecents, saveFavorites, saveRecentRoute } from '@/lib/favorites';
+import { findJourneys } from '@/lib/journey-planner';
 import { useSearch } from '@/lib/search-context';
-import { findFareForRoute, loadTransitData, SupabaseFare } from '@/lib/supabase-services';
-import { dateToMinuteOfDay, findNextTrips, formatDateFr } from '@/lib/time';
-import { FavoriteRoute, StationInfo, TrainTrip, TravelDirection } from '@/types';
+import { loadTransitData } from '@/lib/supabase-services';
+import { dateToMinuteOfDay, formatDateFr } from '@/lib/time';
+import { FavoriteRoute, LineFilter, StationInfo, TrainTrip } from '@/types';
 
-const HOURS = Array.from({ length: 24 }, (_, i) => i.toString().padStart(2, '0'));
-const MINUTES = Array.from({ length: 60 }, (_, i) => i.toString().padStart(2, '0'));
+const LINE_OPTIONS: Array<{ value: LineFilter; label: string }> = [
+  { value: 'ALL', label: 'Toutes les lignes' },
+  { value: 'A', label: 'Ligne A — Banlieue Sud' },
+  { value: 'D', label: 'Ligne D — Goubaa' },
+  { value: 'E', label: 'Ligne E — Bougatfa' },
+];
 
-const LINE_OPTIONS = [
-  { code: 'A', label: 'Banlieue Sud' },
-  { code: 'D', label: 'Goubaa' },
-  { code: 'E', label: 'Bougatfa' },
-] as const;
+const getStationsFromTrips = (trips: TrainTrip[]): string[] =>
+  [...new Set(trips.flatMap((trip) => trip.stops.map((stop) => stop.station)))].sort((a, b) =>
+    a.localeCompare(b, 'fr', { sensitivity: 'base' }),
+  );
 
-const isDirectionForTravel = (direction: string, travelDirection: TravelDirection): boolean => {
-  const directionSet = DIRECTIONS_BY_TRAVEL_DIRECTION[travelDirection];
-  return directionSet.includes(direction as (typeof directionSet)[number]);
-};
-
-const getArrivalsFor = (
-  departure: string,
-  travelDirection: TravelDirection,
-  stations: StationInfo[],
-  trips: TrainTrip[],
-  lineCode: 'A' | 'D' | 'E',
-): string[] => {
-  const lineFilteredTrips = trips.filter((trip) => !trip.lineCode || trip.lineCode === lineCode);
-  const byTrips = stations
-    .filter((station) => station.name !== departure)
-    .map((station) => station.name)
-    .filter((arrival) =>
-      lineFilteredTrips.some((trip) => {
-        if (!isDirectionForTravel(trip.direction, travelDirection)) {
-          return false;
-        }
-
-        const departureIndex = trip.stops.findIndex((stop) => stop.station === departure);
-        const arrivalIndex = trip.stops.findIndex((stop) => stop.station === arrival);
-
-        return departureIndex >= 0 && arrivalIndex > departureIndex;
-      }),
-    );
-
-  return byTrips;
-};
+const StationPickerModal = ({
+  visible,
+  title,
+  stations,
+  selected,
+  onClose,
+  onSelect,
+}: {
+  visible: boolean;
+  title: string;
+  stations: string[];
+  selected: string;
+  onClose: () => void;
+  onSelect: (station: string) => void;
+}) => (
+  <Modal visible={visible} animationType="slide" transparent>
+    <View style={styles.modalBackdrop}>
+      <View style={styles.modalCard}>
+        <Text style={styles.modalTitle}>{title}</Text>
+        <ScrollView style={{ maxHeight: 360 }}>
+          {stations.map((station) => {
+            const isSelected = station === selected;
+            return (
+              <Pressable
+                key={station}
+                style={[styles.modalItem, isSelected ? styles.modalItemActive : undefined]}
+                onPress={() => {
+                  onSelect(station);
+                  onClose();
+                }}
+              >
+                <Text style={[styles.modalItemText, isSelected ? styles.modalItemTextActive : undefined]}>{station}</Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
+        <Pressable style={styles.modalCloseBtn} onPress={onClose}>
+          <Text style={styles.modalCloseText}>Fermer</Text>
+        </Pressable>
+      </View>
+    </View>
+  </Modal>
+);
 
 export default function SearchScreen() {
   const router = useRouter();
   const { search, setSearch, setResults, setSelectedResult } = useSearch();
 
-  const [dateText, setDateText] = useState(search.date.toISOString().slice(0, 10));
-  const [selectedHour, setSelectedHour] = useState(search.date.getHours().toString().padStart(2, '0'));
-  const [selectedMinute, setSelectedMinute] = useState(search.date.getMinutes().toString().padStart(2, '0'));
-  const [manualWalkingText, setManualWalkingText] = useState(String(search.walkingMinutes || ''));
   const [favorites, setFavorites] = useState<FavoriteRoute[]>([]);
+  const [recentRoutes, setRecentRoutes] = useState<FavoriteRoute[]>([]);
   const [validationMessage, setValidationMessage] = useState('');
-  const [stations, setStations] = useState<StationInfo[]>(STATIONS);
+  const [stations, setStations] = useState<StationInfo[]>([]);
   const [trips, setTrips] = useState<TrainTrip[]>([]);
-  const [fares, setFares] = useState<SupabaseFare[]>([]);
   const [sourceLabel, setSourceLabel] = useState<'supabase' | 'csv'>('csv');
+  const [stationModal, setStationModal] = useState<'departure' | 'arrival' | null>(null);
+  const [dateText, setDateText] = useState(search.date.toISOString().slice(0, 10));
+  const [timeText, setTimeText] = useState(
+    `${search.date.getHours().toString().padStart(2, '0')}:${search.date.getMinutes().toString().padStart(2, '0')}`,
+  );
 
   useEffect(() => {
     loadFavorites().then(setFavorites);
+    loadRecents().then(setRecentRoutes);
   }, []);
 
   useEffect(() => {
     loadTransitData(search.marche).then((result) => {
-      setStations(result.stations.length > 0 ? result.stations : STATIONS);
+      setStations(result.stations);
       setTrips(result.trips);
-      setFares(result.fares);
       setSourceLabel(result.source);
     });
   }, [search.marche]);
 
-  const arrivalOptions = useMemo(
-    () => getArrivalsFor(search.departure, search.travelDirection, stations, trips, search.lineCode),
-    [search.departure, search.travelDirection, stations, trips, search.lineCode],
-  );
-
-  const applyCurrentLocation = async () => {
-    const departureStation = stations.find((item) => item.name === search.departure);
-    if (!departureStation) {
-      return;
-    }
-
-    try {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== 'granted') {
-        Alert.alert('GPS non autorisé', 'Veuillez saisir un temps de marche manuel.');
-        return;
-      }
-
-      const location = await Location.getCurrentPositionAsync({});
-      const distance = haversineDistanceKm(
-        location.coords.latitude,
-        location.coords.longitude,
-        departureStation.lat,
-        departureStation.lon,
-      );
-
-      const walkingMinutes = estimateWalkingMinutes(distance);
-      setSearch({ ...search, walkingMinutes });
-      setManualWalkingText(String(walkingMinutes));
-    } catch {
-      Alert.alert('Position indisponible', "Impossible d'obtenir votre position. Saisissez un temps de marche manuel.");
-    }
-  };
-
-  const swapStations = () => {
-    const nextDeparture = search.arrival;
-    const nextDirection: TravelDirection = search.travelDirection === 'Aller' ? 'Retour' : 'Aller';
-    const possibleArrivals = getArrivalsFor(nextDeparture, nextDirection, stations, trips, search.lineCode);
-    if (!possibleArrivals.includes(search.departure)) {
-      setValidationMessage('Impossible d’inverser ce trajet pour le sens choisi.');
-      return;
-    }
-
-    setValidationMessage('');
-    setSearch({
-      ...search,
-      departure: nextDeparture,
-      arrival: search.departure,
-      travelDirection: nextDirection,
-    });
-  };
+  const allStations = useMemo(() => {
+    const fromTrips = getStationsFromTrips(trips);
+    const fromStationsTable = stations.map((item) => item.name);
+    return [...new Set([...fromTrips, ...fromStationsTable])].sort((a, b) =>
+      a.localeCompare(b, 'fr', { sensitivity: 'base' }),
+    );
+  }, [stations, trips]);
 
   const persistFavorites = async (nextFavorites: FavoriteRoute[]) => {
     setFavorites(nextFavorites);
@@ -177,196 +140,157 @@ export default function SearchScreen() {
   };
 
   const applyFavorite = (favorite: FavoriteRoute) => {
-    const nextDirection: TravelDirection = trips.some((trip) => {
-      if (!isDirectionForTravel(trip.direction, 'Aller')) {
-        return false;
-      }
-      const dep = trip.stops.findIndex((stop) => stop.station === favorite.departure);
-      const arr = trip.stops.findIndex((stop) => stop.station === favorite.arrival);
-      return dep >= 0 && arr > dep;
-    })
-      ? 'Aller'
-      : 'Retour';
+    setSearch({ ...search, departure: favorite.departure, arrival: favorite.arrival });
+    setValidationMessage('');
+  };
 
-    setSearch({ ...search, departure: favorite.departure, arrival: favorite.arrival, travelDirection: nextDirection });
+  const swapStations = () => {
+    setSearch({ ...search, departure: search.arrival, arrival: search.departure });
     setValidationMessage('');
   };
 
   const runSearch = async () => {
-    const date = new Date(`${dateText}T${selectedHour}:${selectedMinute}:00`);
-    if (Number.isNaN(date.getTime())) {
-      setValidationMessage('Date ou heure invalide. Utilisez le format AAAA-MM-JJ.');
+    if (!search.departure || !search.arrival || search.departure === search.arrival) {
+      setValidationMessage('Veuillez choisir deux gares différentes.');
       return;
     }
 
-    if (!arrivalOptions.includes(search.arrival)) {
-      setValidationMessage('Trajet invalide pour ce sens. Choisissez une arrivée compatible.');
+    const requestedDate = new Date(`${dateText}T${timeText}:00`);
+    if (Number.isNaN(requestedDate.getTime())) {
+      setValidationMessage('Date/heure invalide. Format attendu: AAAA-MM-JJ et HH:MM.');
       return;
     }
 
-    const manualWalking = Number(manualWalkingText || '0');
-    const walkingMinutes = Number.isNaN(manualWalking) ? 0 : Math.max(0, manualWalking);
+    const transitData = await loadTransitData(search.marche);
+    const routeResults = findJourneys({
+      trips: transitData.trips,
+      fares: transitData.fares,
+      departure: search.departure,
+      arrival: search.arrival,
+      earliestMinute: dateToMinuteOfDay(requestedDate),
+      walkingMinutes: search.walkingMinutes,
+      lineFilter: search.lineFilter,
+      minTransferMinutes: 5,
+      maxTransfers: 2,
+    });
 
-    const earliestMinute = dateToMinuteOfDay(date) + walkingMinutes;
-
-    const filteredTrips = trips.filter((trip) => !trip.lineCode || trip.lineCode === search.lineCode);
-    const nextTrips = findNextTrips(filteredTrips, search.departure, search.arrival, earliestMinute, walkingMinutes).map(
-      (result) => {
-        const fare = findFareForRoute(fares, result.departureStation, result.arrivalStation);
-        return {
-          ...result,
-          fareAmount: fare?.amount,
-          fareCurrency: fare?.currency,
-        };
-      },
-    );
-
-    setSearch({ ...search, date, walkingMinutes });
-    setResults(nextTrips);
-    setSelectedResult(nextTrips[0] ?? null);
-    setValidationMessage(
-      nextTrips.length === 0
-        ? 'Aucun train trouvé. Essayez une heure plus tôt ou changez le sens/marche.'
-        : '',
-    );
+    setResults(routeResults);
+    setSelectedResult(routeResults[0] ?? null);
+    setSearch({ ...search, date: requestedDate });
+    setValidationMessage(routeResults.length === 0 ? 'Aucun trajet trouvé pour cet horaire.' : '');
+    const recents = await saveRecentRoute(search.departure, search.arrival);
+    setRecentRoutes(recents);
     router.push('/(tabs)/resultats');
   };
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <Image source={require('@/assets/images/train-hero.jpg')} style={styles.hero} resizeMode="cover" />
+      <Image source={require('@/assets/images/sncft-logo.png')} style={styles.logo} resizeMode="contain" />
       <View style={styles.headerBlock}>
-        <Image source={require('@/assets/images/sncft-logo.png')} style={styles.logo} resizeMode="contain" />
         <Text style={styles.today}>{formatDateFr(new Date())}</Text>
         <Text style={styles.source}>
-          Source des données: {sourceLabel === 'supabase' ? 'Supabase' : 'CSV local (secours)'}
+          Source des données: {sourceLabel === 'supabase' ? 'Supabase' : 'CSV local (hors ligne)'}
         </Text>
       </View>
 
-      <Image source={require('@/assets/images/train-hero.jpg')} style={styles.hero} resizeMode="cover" />
-
       <Card style={styles.mainCard}>
-        <Text style={styles.title}>Planifier votre trajet</Text>
-
-        <Text style={styles.label}>Ligne</Text>
-        <View style={styles.pickerWrap}>
-          <Picker selectedValue={search.lineCode} onValueChange={(value) => setSearch({ ...search, lineCode: value })}>
-            {LINE_OPTIONS.map((line) => (
-              <Picker.Item key={line.code} label={line.label} value={line.code} />
-            ))}
-          </Picker>
-        </View>
-
-        <View style={styles.rowTop}>
-          <View style={styles.flexOne}>
-            <Text style={styles.label}>Date</Text>
-            <TextInput value={dateText} onChangeText={setDateText} style={styles.input} placeholder="AAAA-MM-JJ" />
-          </View>
-          <View style={styles.flexOne}>
-            <Text style={styles.label}>Sens</Text>
-            <View style={styles.pickerWrap}>
-              <Picker
-                selectedValue={search.travelDirection}
-                onValueChange={(value) => {
-                  const nextDirection = value as TravelDirection;
-                  const arrivals = getArrivalsFor(search.departure, nextDirection, stations, trips, search.lineCode);
-                  const nextArrival = arrivals.includes(search.arrival) ? search.arrival : arrivals[0] ?? search.arrival;
-                  setSearch({ ...search, travelDirection: nextDirection, arrival: nextArrival });
-                }}
-              >
-                {TRAVEL_DIRECTIONS.map((direction) => (
-                  <Picker.Item key={direction} label={direction} value={direction} />
-                ))}
-              </Picker>
-            </View>
-          </View>
-        </View>
+        <Text style={styles.title}>Rechercher un train</Text>
 
         <Text style={styles.label}>Départ</Text>
-        <View style={styles.pickerWrap}>
-          <Picker
-            selectedValue={search.departure}
-            onValueChange={(value) => {
-              const arrivals = getArrivalsFor(value, search.travelDirection, stations, trips, search.lineCode);
-              const nextArrival = arrivals.includes(search.arrival) ? search.arrival : arrivals[0] ?? search.arrival;
-              setSearch({ ...search, departure: value, arrival: nextArrival });
-            }}
-          >
-            {stations.map((station) => (
-              <Picker.Item key={station.name} label={station.name} value={station.name} />
-            ))}
-          </Picker>
-        </View>
+        <Pressable style={styles.compactPicker} onPress={() => setStationModal('departure')}>
+          <Text style={styles.compactPickerText}>{search.departure}</Text>
+        </Pressable>
 
         <Pressable style={styles.swapBtn} onPress={swapStations}>
-          <Text style={styles.swapBtnText}>⇅ Inverser départ/arrivée</Text>
+          <Text style={styles.swapBtnText}>⇅ Inverser départ / arrivée</Text>
         </Pressable>
 
         <Text style={styles.label}>Arrivée</Text>
-        <View style={styles.pickerWrap}>
-          <Picker selectedValue={search.arrival} onValueChange={(value) => setSearch({ ...search, arrival: value })}>
-            {arrivalOptions.map((stationName) => (
-              <Picker.Item key={stationName} label={stationName} value={stationName} />
-            ))}
-          </Picker>
+        <Pressable style={styles.compactPicker} onPress={() => setStationModal('arrival')}>
+          <Text style={styles.compactPickerText}>{search.arrival}</Text>
+        </Pressable>
+
+        <Text style={styles.label}>Date & heure</Text>
+        <View style={styles.dateTimeRow}>
+          <TextInput style={[styles.input, styles.flexOne]} value={dateText} onChangeText={setDateText} placeholder="AAAA-MM-JJ" />
+          <TextInput style={[styles.input, styles.flexOne]} value={timeText} onChangeText={setTimeText} placeholder="HH:MM" />
         </View>
 
-        <Text style={styles.hint}>Arrêts intermédiaires et tarif affichés dans les résultats.</Text>
-
-        <Text style={styles.label}>Heure souhaitée</Text>
-        <View style={styles.timeRow}>
-          <View style={styles.timePickerWrap}>
-            <Picker selectedValue={selectedHour} onValueChange={setSelectedHour}>
-              {HOURS.map((hour) => (
-                <Picker.Item key={hour} label={`${hour} h`} value={hour} />
-              ))}
-            </Picker>
-          </View>
-          <View style={styles.timePickerWrap}>
-            <Picker selectedValue={selectedMinute} onValueChange={setSelectedMinute}>
-              {MINUTES.map((minute) => (
-                <Picker.Item key={minute} label={`${minute} min`} value={minute} />
-              ))}
-            </Picker>
-          </View>
+        <Text style={styles.label}>Filtre ligne (optionnel)</Text>
+        <View style={styles.lineFilterRow}>
+          {LINE_OPTIONS.map((option) => {
+            const active = search.lineFilter === option.value;
+            return (
+              <Pressable
+                key={option.value}
+                style={[styles.lineFilterChip, active ? styles.lineFilterChipActive : undefined]}
+                onPress={() => setSearch({ ...search, lineFilter: option.value })}
+              >
+                <Text style={[styles.lineFilterText, active ? styles.lineFilterTextActive : undefined]}>{option.label}</Text>
+              </Pressable>
+            );
+          })}
         </View>
 
         <Text style={styles.label}>Marche</Text>
-        <View style={styles.pickerWrap}>
-          <Picker selectedValue={search.marche} onValueChange={(value) => setSearch({ ...search, marche: value })}>
-            {MARCHES.map((marche) => (
-              <Picker.Item key={marche} label={marche} value={marche} />
-            ))}
-          </Picker>
-        </View>
-
-        <View style={styles.actionsRow}>
-          <Pressable style={styles.secondaryBtn} onPress={applyCurrentLocation}>
-            <Text style={styles.secondaryText}>Utiliser ma position</Text>
-          </Pressable>
-          <Pressable style={styles.outlineBtn} onPress={addCurrentToFavorites}>
-            <Text style={styles.outlineText}>Ajouter en favori</Text>
-          </Pressable>
+        <View style={styles.lineFilterRow}>
+          {MARCHES.map((marche) => {
+            const active = search.marche === marche;
+            return (
+              <Pressable
+                key={marche}
+                style={[styles.lineFilterChip, active ? styles.lineFilterChipActive : undefined]}
+                onPress={() => setSearch({ ...search, marche })}
+              >
+                <Text style={[styles.lineFilterText, active ? styles.lineFilterTextActive : undefined]}>{marche}</Text>
+              </Pressable>
+            );
+          })}
         </View>
 
         <Text style={styles.label}>Temps de marche manuel (minutes)</Text>
         <TextInput
-          value={manualWalkingText}
-          onChangeText={setManualWalkingText}
+          value={String(search.walkingMinutes)}
+          onChangeText={(value) => {
+            const parsed = Number(value || '0');
+            setSearch({ ...search, walkingMinutes: Number.isNaN(parsed) ? 0 : Math.max(0, parsed) });
+          }}
           keyboardType="numeric"
           style={styles.input}
         />
 
         {validationMessage ? <Text style={styles.validation}>{validationMessage}</Text> : null}
 
-        <Pressable style={styles.primaryBtn} onPress={runSearch}>
-          <Text style={styles.primaryText}>Trouver les prochains trains</Text>
-        </Pressable>
+        <View style={styles.actionsRow}>
+          <Pressable style={styles.outlineBtn} onPress={addCurrentToFavorites}>
+            <Text style={styles.outlineText}>Ajouter en favori</Text>
+          </Pressable>
+          <Pressable style={styles.primaryBtn} onPress={runSearch}>
+            <Text style={styles.primaryText}>Rechercher</Text>
+          </Pressable>
+        </View>
+      </Card>
+
+      <Card>
+        <Text style={styles.favTitle}>Trajets récents</Text>
+        {recentRoutes.length === 0 ? (
+          <Text style={styles.emptyFav}>Aucun trajet récent.</Text>
+        ) : (
+          recentRoutes.map((recent) => (
+            <Pressable key={recent.id} onPress={() => applyFavorite(recent)} style={styles.favItem}>
+              <Text style={styles.favText}>
+                {recent.departure} → {recent.arrival}
+              </Text>
+            </Pressable>
+          ))
+        )}
       </Card>
 
       <Card>
         <Text style={styles.favTitle}>Favoris</Text>
         {favorites.length === 0 ? (
-          <Text style={styles.emptyFav}>Aucun favori enregistré pour le moment.</Text>
+          <Text style={styles.emptyFav}>Aucun favori enregistré.</Text>
         ) : (
           favorites.map((favorite) => (
             <Pressable key={favorite.id} onPress={() => applyFavorite(favorite)} style={styles.favItem}>
@@ -379,6 +303,24 @@ export default function SearchScreen() {
       </Card>
 
       <Text style={styles.disclaimer}>{APP_DISCLAIMER}</Text>
+
+      <StationPickerModal
+        visible={stationModal === 'departure'}
+        title="Choisir la gare de départ"
+        stations={allStations}
+        selected={search.departure}
+        onClose={() => setStationModal(null)}
+        onSelect={(station) => setSearch({ ...search, departure: station })}
+      />
+
+      <StationPickerModal
+        visible={stationModal === 'arrival'}
+        title="Choisir la gare d’arrivée"
+        stations={allStations}
+        selected={search.arrival}
+        onClose={() => setStationModal(null)}
+        onSelect={(station) => setSearch({ ...search, arrival: station })}
+      />
     </ScrollView>
   );
 }
@@ -386,34 +328,39 @@ export default function SearchScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: SNCFT_COLORS.background },
   content: { padding: 16, paddingBottom: 30 },
+  hero: { width: '100%', height: 170, borderRadius: 16, marginBottom: 10 },
+  logo: { width: 200, height: 50, alignSelf: 'center', marginBottom: 6 },
   headerBlock: { alignItems: 'center', marginBottom: 8 },
-  logo: { width: 180, height: 50 },
   today: { color: SNCFT_COLORS.muted, textTransform: 'capitalize', marginTop: 2, fontWeight: '600' },
   source: { color: '#1e40af', fontWeight: '600', fontSize: 12, marginTop: 2 },
-  hero: { width: '100%', height: 220, borderRadius: 18, marginBottom: 14 },
-  mainCard: { marginTop: -6 },
+  mainCard: { marginTop: 6 },
   title: { fontSize: 24, fontWeight: '800', color: SNCFT_COLORS.primary, marginBottom: 12 },
-  rowTop: { flexDirection: 'row', gap: 10 },
-  flexOne: { flex: 1 },
-  label: { fontSize: 14, color: '#334155', marginTop: 8, fontWeight: '600' },
-  pickerWrap: {
-    borderWidth: 1,
-    borderColor: '#d4deee',
-    borderRadius: 12,
-    overflow: 'hidden',
-    backgroundColor: '#fff',
+  label: { fontSize: 14, color: '#334155', marginTop: 10, fontWeight: '600' },
+  compactPicker: {
     marginTop: 6,
-  },
-  hint: { color: SNCFT_COLORS.muted, marginTop: 6, fontSize: 12 },
-  timeRow: { flexDirection: 'row', gap: 10, marginTop: 4 },
-  timePickerWrap: {
-    flex: 1,
     borderWidth: 1,
     borderColor: '#d4deee',
     borderRadius: 12,
-    overflow: 'hidden',
     backgroundColor: '#fff',
+    padding: 12,
   },
+  compactPickerText: { color: '#0f172a', fontWeight: '600' },
+  swapBtn: { marginTop: 8, paddingVertical: 6 },
+  swapBtnText: { color: SNCFT_COLORS.primary, textAlign: 'center', fontWeight: '700' },
+  lineFilterRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 6 },
+  lineFilterChip: {
+    borderWidth: 1,
+    borderColor: '#bfdbfe',
+    borderRadius: 999,
+    backgroundColor: '#eff6ff',
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+  },
+  lineFilterChipActive: { backgroundColor: SNCFT_COLORS.primary, borderColor: SNCFT_COLORS.primary },
+  lineFilterText: { color: '#1e3a8a', fontSize: 12, fontWeight: '700' },
+  lineFilterTextActive: { color: '#fff' },
+  dateTimeRow: { flexDirection: 'row', gap: 8, marginTop: 4 },
+  flexOne: { flex: 1 },
   input: {
     borderWidth: 1,
     borderColor: '#d4deee',
@@ -423,9 +370,7 @@ const styles = StyleSheet.create({
     marginTop: 6,
     backgroundColor: '#fff',
   },
-  actionsRow: { flexDirection: 'row', gap: 10, marginTop: 10 },
-  secondaryBtn: { flex: 1, backgroundColor: SNCFT_COLORS.secondary, padding: 12, borderRadius: 12 },
-  secondaryText: { color: '#fff', textAlign: 'center', fontWeight: '700' },
+  actionsRow: { flexDirection: 'row', gap: 10, marginTop: 14 },
   outlineBtn: {
     flex: 1,
     borderWidth: 1,
@@ -435,11 +380,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   outlineText: { color: SNCFT_COLORS.primary, textAlign: 'center', fontWeight: '700' },
-  primaryBtn: { backgroundColor: SNCFT_COLORS.primary, padding: 15, borderRadius: 12, marginTop: 14 },
+  primaryBtn: { flex: 1, backgroundColor: SNCFT_COLORS.primary, padding: 12, borderRadius: 12 },
   primaryText: { color: '#fff', textAlign: 'center', fontWeight: '700' },
   validation: { marginTop: 8, color: '#b91c1c', fontWeight: '600' },
-  swapBtn: { marginTop: 10, paddingVertical: 8 },
-  swapBtnText: { color: SNCFT_COLORS.primary, textAlign: 'center', fontWeight: '700' },
   favTitle: { fontSize: 18, color: SNCFT_COLORS.text, fontWeight: '700', marginBottom: 8 },
   emptyFav: { color: SNCFT_COLORS.muted },
   favItem: {
@@ -451,5 +394,33 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   favText: { color: SNCFT_COLORS.text, fontWeight: '600' },
-  disclaimer: { color: '#475569', fontSize: 12, marginTop: 4, textAlign: 'center' },
+  disclaimer: { color: '#475569', fontSize: 12, marginTop: 8, textAlign: 'center' },
+  modalBackdrop: {
+    flex: 1,
+    backgroundColor: 'rgba(15,23,42,0.35)',
+    justifyContent: 'center',
+    padding: 16,
+  },
+  modalCard: {
+    backgroundColor: '#fff',
+    borderRadius: 16,
+    padding: 14,
+  },
+  modalTitle: { fontWeight: '800', fontSize: 18, color: '#0f172a', marginBottom: 10 },
+  modalItem: {
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#eef2ff',
+  },
+  modalItemActive: { backgroundColor: '#eff6ff', borderRadius: 10 },
+  modalItemText: { color: '#1e293b', fontWeight: '600' },
+  modalItemTextActive: { color: '#1d4ed8' },
+  modalCloseBtn: {
+    marginTop: 10,
+    paddingVertical: 10,
+    borderRadius: 10,
+    backgroundColor: SNCFT_COLORS.primary,
+  },
+  modalCloseText: { color: '#fff', textAlign: 'center', fontWeight: '700' },
 });

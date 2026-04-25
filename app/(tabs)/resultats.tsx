@@ -9,9 +9,10 @@ import { useSearch } from '@/lib/search-context';
 export default function ResultsScreen() {
   const { results, search, selectedResult, setSelectedResult } = useSearch();
   const [liveStatus, setLiveStatus] = useState<LiveTrainStatus | null>(null);
+  const [expandedJourneyId, setExpandedJourneyId] = useState<string | null>(null);
 
   useEffect(() => {
-    const train = selectedResult?.trainNumber ?? results[0]?.trainNumber;
+    const train = selectedResult?.segments[0]?.trainNumber ?? results[0]?.segments[0]?.trainNumber;
     if (!train) {
       setLiveStatus(null);
       return;
@@ -38,7 +39,9 @@ export default function ResultsScreen() {
             <Text style={styles.liveText}>
               Retard estimé: {liveStatus.delay_minutes !== null ? `${liveStatus.delay_minutes} min` : 'Non disponible'}
             </Text>
-            <Text style={styles.liveText}>Dernière mise à jour: {new Date(liveStatus.updated_at).toLocaleTimeString('fr-FR')}</Text>
+            <Text style={styles.liveText}>
+              Dernière mise à jour: {new Date(liveStatus.updated_at).toLocaleTimeString('fr-FR')}
+            </Text>
             <Text style={styles.liveHint}>Indication expérimentale, non officielle SNCFT.</Text>
           </>
         ) : (
@@ -48,63 +51,91 @@ export default function ResultsScreen() {
 
       {results.length === 0 ? (
         <Card>
-          <Text style={styles.empty}>Aucun train trouvé pour cette recherche.</Text>
-          <Text style={styles.helper}>Astuce: vérifiez le sens choisi, la marche ou l&apos;heure demandée.</Text>
+          <Text style={styles.empty}>Aucun trajet trouvé pour cette recherche.</Text>
+          <Text style={styles.helper}>Astuce: changez l&apos;heure ou laissez « Toutes les lignes ».</Text>
         </Card>
       ) : (
         results.map((result, index) => {
-          const isActive =
-            (selectedResult?.trainNumber === result.trainNumber &&
-              selectedResult?.departureTime === result.departureTime) ||
-            (!selectedResult && index === 0);
-          const totalMinutes = result.durationMinutes + result.waitingMinutes + result.walkingMinutes;
+          const isActive = selectedResult?.id === result.id || (!selectedResult && index === 0);
+          const expanded = expandedJourneyId === result.id;
 
           return (
             <Pressable
-              key={`${result.trainNumber}-${result.departureTime}`}
+              key={result.id}
               onPress={() => setSelectedResult(result)}
               style={styles.pressable}
             >
               <Card style={isActive ? styles.activeCard : undefined}>
                 <View style={styles.topRow}>
-                  <Text style={styles.train}>Train {result.trainNumber}</Text>
-                  <Text style={styles.badge}>{index === 0 ? 'Prochain' : `Alternative ${index}`}</Text>
-                </View>
-                <Text style={styles.direction}>{result.direction}</Text>
-
-                <View style={styles.timeline}>
-                  <View style={styles.dot} />
-                  <View style={styles.line} />
-                  <View style={styles.dot} />
+                  <Text style={styles.train}>{result.departureTime} → {result.arrivalTime}</Text>
+                  <Text style={styles.badge}>{index === 0 ? 'Prochain' : `Option ${index + 1}`}</Text>
                 </View>
 
-                <View style={styles.rowTimes}>
-                  <Text style={styles.bigTime}>{result.departureTime}</Text>
-                  <Text style={styles.bigTime}>{result.arrivalTime}</Text>
-                </View>
-
-                <Text style={styles.detail}>Départ: {result.departureStation}</Text>
-                <Text style={styles.detail}>Arrivée: {result.arrivalStation}</Text>
+                <Text style={styles.total}>Durée totale: {result.totalMinutes} min</Text>
+                <Text style={styles.detail}>Correspondances: {result.transferCount}</Text>
+                <Text style={styles.detail}>Attente en correspondance: {result.transferWaitingMinutes} min</Text>
+                <Text style={styles.detail}>Durée en train: {result.durationMinutes} min</Text>
                 <Text style={styles.detail}>Temps de marche: {result.walkingMinutes} min</Text>
-                <Text style={styles.detail}>Temps d'attente: {result.waitingMinutes} min</Text>
-                <Text style={styles.detail}>Durée train: {result.durationMinutes} min</Text>
-                <Text style={styles.total}>Durée totale estimée: {totalMinutes} min</Text>
                 <Text style={styles.detail}>
-                  Tarif: {result.fareAmount ? `${result.fareAmount.toFixed(2)} ${result.fareCurrency ?? 'TND'}` : 'Non disponible'}
+                  Tarif total: {result.fareAmount ? `${result.fareAmount.toFixed(2)} ${result.fareCurrency ?? 'TND'}` : 'Tarif non disponible'}
                 </Text>
 
-                <Text style={styles.stopsTitle}>Arrêts intermédiaires</Text>
-                {result.intermediateStops.length === 0 ? (
-                  <Text style={styles.stopItem}>Aucun arrêt intermédiaire.</Text>
-                ) : (
-                  <View style={styles.stopsWrap}>
-                    {result.intermediateStops.map((stop) => (
-                      <Text key={`${result.trainNumber}-${stop}`} style={styles.stopItem}>
-                        • {stop}
+                <Text style={styles.segmentHeader}>Segments</Text>
+                {result.segments.map((segment, segmentIndex) => {
+                  const previousSegment = result.segments[segmentIndex - 1];
+                  const transferWait = previousSegment
+                    ? Math.max(
+                        0,
+                        computeWaitMinutes(previousSegment.arrivalTime, segment.departureTime),
+                      )
+                    : 0;
+
+                  return (
+                    <View key={`${result.id}-${segment.lineCode}-${segment.trainNumber}-${segmentIndex}`} style={styles.segmentItem}>
+                      {segmentIndex > 0 ? (
+                        <Text style={styles.transferText}>
+                          Changement à {previousSegment.arrivalStation}: attendre {transferWait} min
+                        </Text>
+                      ) : null}
+
+                      <Text style={styles.segmentTitle}>
+                        Segment {segmentIndex + 1}: Ligne {segment.lineCode} train {segment.trainNumber}
                       </Text>
+                      <Text style={styles.segmentText}>
+                        {segment.departureStation} ({segment.departureTime}) → {segment.arrivalStation} ({segment.arrivalTime})
+                      </Text>
+                      <Text style={styles.segmentFare}>
+                        Tarif segment: {segment.fareAmount ? `${segment.fareAmount.toFixed(2)} ${segment.fareCurrency ?? 'TND'}` : 'Tarif non disponible'}
+                      </Text>
+                    </View>
+                  );
+                })}
+
+                <Pressable
+                  style={styles.expandBtn}
+                  onPress={() => setExpandedJourneyId(expanded ? null : result.id)}
+                >
+                  <Text style={styles.expandText}>{expanded ? 'Masquer les arrêts intermédiaires' : 'Afficher les arrêts intermédiaires'}</Text>
+                </Pressable>
+
+                {expanded ? (
+                  <View style={styles.stopsWrap}>
+                    {result.segments.map((segment, segmentIndex) => (
+                      <View key={`${result.id}-stops-${segmentIndex}`} style={styles.segmentStopsWrap}>
+                        <Text style={styles.segmentStopsTitle}>Ligne {segment.lineCode} • train {segment.trainNumber}</Text>
+                        {segment.intermediateStops.length === 0 ? (
+                          <Text style={styles.stopItem}>Aucun arrêt intermédiaire.</Text>
+                        ) : (
+                          segment.intermediateStops.map((stop) => (
+                            <Text key={`${result.id}-${segment.trainNumber}-${stop}`} style={styles.stopItem}>
+                              • {stop}
+                            </Text>
+                          ))
+                        )}
+                      </View>
                     ))}
                   </View>
-                )}
+                ) : null}
               </Card>
             </Pressable>
           );
@@ -115,6 +146,16 @@ export default function ResultsScreen() {
     </ScrollView>
   );
 }
+
+const parseTime = (value: string): number => {
+  const [hours, minutes] = value.split(':').map(Number);
+  return hours * 60 + minutes;
+};
+
+const computeWaitMinutes = (arrival: string, departure: string): number => {
+  const diff = parseTime(departure) - parseTime(arrival);
+  return diff >= 0 ? diff : diff + 24 * 60;
+};
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: SNCFT_COLORS.background },
@@ -140,16 +181,19 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     overflow: 'hidden',
   },
-  direction: { fontSize: 13, color: '#475569', marginBottom: 10, marginTop: 6 },
-  timeline: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 },
-  dot: { width: 12, height: 12, borderRadius: 6, backgroundColor: SNCFT_COLORS.primary },
-  line: { flex: 1, height: 3, backgroundColor: '#bfdbfe' },
-  rowTimes: { flexDirection: 'row', justifyContent: 'space-between' },
-  bigTime: { fontSize: 32, fontWeight: '800', color: SNCFT_COLORS.primary },
+  total: { marginTop: 8, color: '#0f172a', fontWeight: '800' },
   detail: { marginTop: 5, color: '#166534', fontWeight: '600' },
-  total: { marginTop: 7, color: '#0f172a', fontWeight: '800' },
-  stopsTitle: { marginTop: 10, fontWeight: '700', color: '#1f2937' },
+  segmentHeader: { marginTop: 10, fontWeight: '800', color: '#1f2937' },
+  segmentItem: { marginTop: 8, backgroundColor: '#f8fbff', borderRadius: 10, padding: 8 },
+  segmentTitle: { color: '#1d4ed8', fontWeight: '700' },
+  segmentText: { color: '#334155', marginTop: 3 },
+  segmentFare: { color: '#166534', marginTop: 3, fontWeight: '600' },
+  transferText: { color: '#92400e', fontWeight: '700', marginBottom: 4 },
+  expandBtn: { marginTop: 10, paddingVertical: 6 },
+  expandText: { textAlign: 'center', color: SNCFT_COLORS.primary, fontWeight: '700' },
   stopsWrap: { marginTop: 4, backgroundColor: '#f8fbff', borderRadius: 10, padding: 8 },
+  segmentStopsWrap: { marginBottom: 8 },
+  segmentStopsTitle: { fontWeight: '700', color: '#1f2937' },
   stopItem: { color: '#475569', marginTop: 4 },
   disclaimer: { color: '#475569', fontSize: 12, marginTop: 8, textAlign: 'center' },
 });

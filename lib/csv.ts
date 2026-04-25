@@ -1,28 +1,32 @@
 import { Asset } from 'expo-asset';
 import * as FileSystem from 'expo-file-system';
 
-import { CsvRow, DirectionType, MarcheType, TrainTrip } from '@/types';
+import { CsvRow, FareInfo, LineCode, MarcheType, TrainTrip } from '@/types';
+import { normalizeStationName } from '@/lib/station-name';
 
-const csvFiles: Record<MarcheType, number> = {
-  Hiver: require('@/data/csv/banlieue-sud-hiver.csv'),
-  Été: require('@/data/csv/banlieue-sud-ete.csv'),
-  Ramadan: require('@/data/csv/banlieue-sud-ramadan.csv'),
-};
+const scheduleFiles: Array<{ lineCode: LineCode; lineName: string; file: number }> = [
+  {
+    lineCode: 'A',
+    lineName: 'Banlieue Sud',
+    file: require('@/data/schedules/line_A_banlieue_sud_hiver_2025_schedules.csv'),
+  },
+  {
+    lineCode: 'D',
+    lineName: 'Goubaa',
+    file: require('@/data/schedules/schedules_line_D_goubaa.csv'),
+  },
+  {
+    lineCode: 'E',
+    lineName: 'Bougatfa',
+    file: require('@/data/schedules/schedules_line_E_bougatfa.csv'),
+  },
+];
 
-const isDirectionType = (value: string): value is DirectionType =>
-  [
-    'Tunis → Borj Cedria',
-    'Borj Cedria → Tunis',
-    'Tunis → Erriadh',
-    'Erriadh → Tunis',
-  ].includes(value);
-
-const isValidTime = (value: string): boolean => /^([01]\d|2[0-3]):[0-5]\d$/.test(value);
-
-const toMinutes = (hhmm: string): number => {
-  const [hours, minutes] = hhmm.split(':').map(Number);
-  return hours * 60 + minutes;
-};
+const faresFiles: Array<{ lineCode: LineCode; file: number }> = [
+  { lineCode: 'A', file: require('@/data/fares/fares_line_A_banlieue_sud.csv') },
+  { lineCode: 'D', file: require('@/data/fares/fares_line_D_goubaa.csv') },
+  { lineCode: 'E', file: require('@/data/fares/fares_line_E_bougatfa.csv') },
+];
 
 const splitCsvLine = (line: string): string[] => {
   const cells: string[] = [];
@@ -56,7 +60,7 @@ const splitCsvLine = (line: string): string[] => {
   return cells;
 };
 
-const parseCsv = (content: string): CsvRow[] => {
+const parseCsvObjects = (content: string): Record<string, string>[] => {
   const lines = content
     .replace(/^\uFEFF/, '')
     .split(/\r?\n/)
@@ -67,46 +71,119 @@ const parseCsv = (content: string): CsvRow[] => {
     return [];
   }
 
-  return lines.slice(1).flatMap((line) => {
+  const headers = splitCsvLine(lines[0]).map((header) => header.toLowerCase());
+
+  return lines.slice(1).map((line) => {
     const columns = splitCsvLine(line);
-    if (columns.length < 4) {
-      return [];
-    }
-
-    const [trainNumber, direction, station, time] = columns;
-    if (!trainNumber || !station || !isDirectionType(direction) || !isValidTime(time)) {
-      return [];
-    }
-
-    return [{ trainNumber, direction, station, time }];
+    const row: Record<string, string> = {};
+    headers.forEach((header, index) => {
+      row[header] = columns[index] ?? '';
+    });
+    return row;
   });
 };
 
-export const groupRowsByTrain = (rows: CsvRow[]): TrainTrip[] => {
+const isValidTime = (value: string): boolean => /^([01]\d|2[0-3]):[0-5]\d$/.test(value);
+
+const normalizeScheduleRows = (rows: Record<string, string>[], lineCode: LineCode, lineName: string): CsvRow[] =>
+  rows
+    .map((row) => {
+      const trainNumber = row.train_number || row.train || row.numero_train;
+      const direction = row.direction || row.sens || '';
+      const station = normalizeStationName(row.station || row.station_name || row.station_code || '');
+      const time = row.time || row.departure_time || row.scheduled_time || row.horaire || '';
+      const stationOrder = Number(row.station_order || row.stop_sequence || row.sequence || '0');
+
+      if (!trainNumber || !direction || !station || !isValidTime(time)) {
+        return null;
+      }
+
+      return {
+        lineCode,
+        lineName,
+        direction,
+        trainNumber,
+        station,
+        time,
+        stationOrder: Number.isNaN(stationOrder) ? 0 : stationOrder,
+      } satisfies CsvRow;
+    })
+    .filter((row): row is CsvRow => row !== null);
+
+const groupRowsByTrain = (rows: CsvRow[]): TrainTrip[] => {
   const grouped = new Map<string, TrainTrip>();
 
   rows.forEach((row) => {
-    const key = `${row.trainNumber}-${row.direction}`;
+    const key = `${row.lineCode}-${row.trainNumber}-${row.direction}`;
     if (!grouped.has(key)) {
       grouped.set(key, {
+        lineCode: row.lineCode,
+        lineName: row.lineName,
         trainNumber: row.trainNumber,
         direction: row.direction,
         stops: [],
       });
     }
 
-    grouped.get(key)?.stops.push({ station: row.station, time: row.time });
+    grouped.get(key)?.stops.push({ station: row.station, time: row.time, order: row.stationOrder });
   });
 
-  return [...grouped.values()].map((trip) => ({
-    ...trip,
-    stops: trip.stops.sort((a, b) => toMinutes(a.time) - toMinutes(b.time)),
-  }));
+  return [...grouped.values()]
+    .map((trip) => ({
+      ...trip,
+      stops: trip.stops.sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
+    }))
+    .filter((trip) => trip.stops.length >= 2);
 };
 
-export const loadTripsForMarche = async (marche: MarcheType): Promise<TrainTrip[]> => {
-  const asset = Asset.fromModule(csvFiles[marche]);
+const readAssetAsString = async (moduleId: number): Promise<string> => {
+  const asset = Asset.fromModule(moduleId);
   await asset.downloadAsync();
-  const content = await FileSystem.readAsStringAsync(asset.localUri ?? asset.uri);
-  return groupRowsByTrain(parseCsv(content));
+  return FileSystem.readAsStringAsync(asset.localUri ?? asset.uri);
+};
+
+export const loadTripsForMarche = async (_marche: MarcheType): Promise<TrainTrip[]> => {
+  const allRows = await Promise.all(
+    scheduleFiles.map(async ({ lineCode, lineName, file }) => {
+      const content = await readAssetAsString(file);
+      return normalizeScheduleRows(parseCsvObjects(content), lineCode, lineName);
+    }),
+  );
+
+  return groupRowsByTrain(allRows.flat());
+};
+
+export const loadFaresFromCsv = async (): Promise<FareInfo[]> => {
+  const fares = await Promise.all(
+    faresFiles.map(async ({ lineCode, file }) => {
+      const content = await readAssetAsString(file);
+      const rows = parseCsvObjects(content);
+      const row =
+        rows.find((item) => (item.fare_type || '').toLowerCase().includes('plein tarif')) ??
+        rows.find((item) => Boolean(item.price_tnd || item.price));
+
+      if (!row) {
+        return null;
+      }
+
+      const amount = Number(row.price_tnd || row.price || row.amount || '0');
+      if (Number.isNaN(amount) || amount <= 0) {
+        return null;
+      }
+
+      return {
+        lineCode,
+        amount,
+        currency: 'TND',
+        fareType: row.fare_type,
+      } satisfies FareInfo;
+    }),
+  );
+
+  return fares.reduce<FareInfo[]>((acc, fare) => {
+    if (fare) {
+      acc.push(fare);
+    }
+    return acc;
+  }, []);
 };

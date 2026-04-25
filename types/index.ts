@@ -1,16 +1,17 @@
 export type MarcheType = 'Hiver' | 'Été' | 'Ramadan';
 
-export type TravelDirection = 'Aller' | 'Retour';
+export type LineCode = 'A' | 'D' | 'E';
 
-export type DirectionType =
-  | 'Tunis → Borj Cedria'
-  | 'Borj Cedria → Tunis'
-  | 'Tunis → Erriadh'
-  | 'Erriadh → Tunis';
+export type LineFilter = LineCode | 'ALL';
+
+export type DirectionType = string;
 
 export interface CsvRow {
+  lineCode: LineCode;
+  lineName: string;
+  direction: string;
   trainNumber: string;
-  direction: DirectionType;
+  stationOrder: number;
   station: string;
   time: string;
 }
@@ -18,29 +19,47 @@ export interface CsvRow {
 export interface TrainStop {
   station: string;
   time: string;
+  order?: number;
 }
 
 export interface TrainTrip {
   trainNumber: string;
-  direction: DirectionType;
+  direction: string;
   stops: TrainStop[];
-  lineCode?: string;
-  lineName?: string;
+  lineCode: LineCode;
+  lineName: string;
 }
 
-export interface RouteResult {
+export interface JourneySegment {
+  lineCode: LineCode;
+  lineName: string;
   trainNumber: string;
-  direction: DirectionType;
+  direction: string;
+  departureStation: string;
+  arrivalStation: string;
   departureTime: string;
   arrivalTime: string;
   durationMinutes: number;
-  waitingMinutes: number;
-  walkingMinutes: number;
-  departureStation: string;
-  arrivalStation: string;
   intermediateStops: string[];
   fareAmount?: number;
   fareCurrency?: string;
+}
+
+export interface RouteResult {
+  id: string;
+  departureStation: string;
+  arrivalStation: string;
+  departureTime: string;
+  arrivalTime: string;
+  durationMinutes: number;
+  transferCount: number;
+  transferWaitingMinutes: number;
+  walkingMinutes: number;
+  totalMinutes: number;
+  segments: JourneySegment[];
+  fareAmount?: number;
+  fareCurrency?: string;
+  trainNumber?: string;
 }
 
 export interface StationInfo {
@@ -54,4 +73,11 @@ export interface FavoriteRoute {
   id: string;
   departure: string;
   arrival: string;
+}
+
+export interface FareInfo {
+  lineCode: LineCode;
+  amount: number;
+  currency: string;
+  fareType?: string;
 }

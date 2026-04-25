@@ -1,27 +1,28 @@
-import { loadTripsForMarche } from '@/lib/csv';
+import { loadFaresFromCsv, loadTripsForMarche } from '@/lib/csv';
 import { STATIONS } from '@/lib/constants';
+import { normalizeStationName } from '@/lib/station-name';
 import { hasSupabaseEnv, supabase } from '@/lib/supabase';
-import { DirectionType, MarcheType, StationInfo, TrainTrip } from '@/types';
+import { FareInfo, LineCode, MarcheType, StationInfo, TrainTrip } from '@/types';
 
 interface SupabaseLine {
   id: string;
   name: string;
 }
 
-export interface SupabaseFare {
-  departure: string;
-  arrival: string;
-  amount: number;
-  currency: string;
-}
-
 interface TransitDataResult {
   stations: StationInfo[];
   lines: SupabaseLine[];
   trips: TrainTrip[];
-  fares: SupabaseFare[];
+  fares: FareInfo[];
   source: 'supabase' | 'csv';
 }
+
+const toLineCode = (value: string | null): LineCode | null => {
+  if (value === 'A' || value === 'D' || value === 'E') {
+    return value;
+  }
+  return null;
+};
 
 const readString = (row: Record<string, unknown>, keys: string[]): string | null => {
   for (const key of keys) {
@@ -50,7 +51,7 @@ const readNumber = (row: Record<string, unknown>, keys: string[]): number | null
 };
 
 const isPublished = (row: Record<string, unknown>): boolean => {
-  const publishedValue = row.published;
+  const publishedValue = row.published ?? row.is_published;
   if (typeof publishedValue === 'boolean') {
     return publishedValue;
   }
@@ -68,42 +69,18 @@ const isPublished = (row: Record<string, unknown>): boolean => {
   return true;
 };
 
-const normalizeDirection = (value: string | null): DirectionType | null => {
-  if (!value) {
-    return null;
-  }
-
-  const cleaned = value
-    .replaceAll('->', '→')
-    .replaceAll('vers', '→')
-    .replace(/\s+/g, ' ')
-    .trim();
-
-  const validDirections: DirectionType[] = [
-    'Tunis → Borj Cedria',
-    'Borj Cedria → Tunis',
-    'Tunis → Erriadh',
-    'Erriadh → Tunis',
-  ];
-
-  const found = validDirections.find((direction) =>
-    direction.toLowerCase().replaceAll(' ', '').includes(cleaned.toLowerCase().replaceAll(' ', '')),
-  );
-
-  return found ?? (validDirections.includes(cleaned as DirectionType) ? (cleaned as DirectionType) : null);
-};
-
 const normalizeStations = (rows: Record<string, unknown>[]): StationInfo[] => {
   const fallbackMap = new Map(STATIONS.map((station) => [station.name.toLowerCase(), station]));
 
   const normalized = rows
     .filter(isPublished)
     .map((row) => {
-      const name = readString(row, ['name', 'station_name', 'label']);
-      if (!name) {
+      const rawName = readString(row, ['name', 'station_name', 'label']);
+      if (!rawName) {
         return null;
       }
 
+      const name = normalizeStationName(rawName);
       const fallback = fallbackMap.get(name.toLowerCase());
       return {
         name,
@@ -136,36 +113,33 @@ const normalizeTrips = (
   lineCodeById: Map<string, string>,
   marche: MarcheType,
 ): TrainTrip[] => {
-  const grouped = new Map<string, { trainNumber: string; direction: DirectionType; lineCode?: string; lineName?: string; stops: { station: string; time: string; order: number }[] }>();
+  const grouped = new Map<string, TrainTrip>();
 
   rows.filter(isPublished).forEach((row, rowIndex) => {
-    const marcheValue = readString(row, ['marche', 'season']);
-    if (marcheValue && marcheValue !== marche) {
+    const marcheValue = (readString(row, ['marche', 'season']) || '').toLowerCase();
+    if (marcheValue && !marcheValue.includes(marche.toLowerCase())) {
       return;
     }
 
-    const direction = normalizeDirection(readString(row, ['direction', 'sens', 'route_direction']));
     const trainNumber = readString(row, ['train_number', 'train', 'numero_train', 'trip_code']);
     const stationName =
       readString(row, ['station_name', 'station']) ??
       stationNameById.get(readString(row, ['station_id']) ?? '') ??
       null;
-    const time = readString(row, ['time', 'departure_time', 'schedule_time', 'horaire']);
+    const time = readString(row, ['time', 'departure_time', 'schedule_time', 'horaire', 'scheduled_time']);
 
-    if (!direction || !trainNumber || !stationName || !time) {
+    const lineId = readString(row, ['line_id']);
+    const codeCandidate = readString(row, ['line_code', 'line']) ?? (lineId ? lineCodeById.get(lineId) ?? lineId : null);
+    const lineCode = toLineCode(codeCandidate);
+    const lineName = readString(row, ['line_name']) ?? (lineCode ? `Ligne ${lineCode}` : null);
+
+    if (!trainNumber || !stationName || !time || !lineCode || !lineName) {
       return;
     }
 
-    const lineId = readString(row, ['line_id']);
-    const lineCode = readString(row, ['line_code', 'line']) ?? (lineId ? lineCodeById.get(lineId) ?? lineId : null);
-    const lineName = readString(row, ['line_name']);
+    const direction = readString(row, ['direction', 'sens', 'route_direction']) ?? `Ligne ${lineCode}`;
 
-    const key = [
-      readString(row, ['trip_id', 'service_id', 'schedule_id']),
-      trainNumber,
-      direction,
-      lineCode,
-    ]
+    const key = [readString(row, ['trip_id', 'service_id', 'schedule_id']), trainNumber, direction, lineCode]
       .filter(Boolean)
       .join('-');
 
@@ -173,53 +147,50 @@ const normalizeTrips = (
       grouped.set(key, {
         trainNumber,
         direction,
-        lineCode: lineCode ?? undefined,
-        lineName: lineName ?? undefined,
+        lineCode,
+        lineName,
         stops: [],
       });
     }
 
     const stopOrder = readNumber(row, ['stop_sequence', 'sequence', 'station_order']) ?? rowIndex;
 
-    grouped.get(key)?.stops.push({ station: stationName, time, order: stopOrder });
+    grouped.get(key)?.stops.push({ station: normalizeStationName(stationName), time, order: stopOrder });
   });
 
   return [...grouped.values()]
     .map((trip) => ({
-      trainNumber: trip.trainNumber,
-      direction: trip.direction,
-      lineCode: trip.lineCode,
-      lineName: trip.lineName,
-      stops: trip.stops.sort((a, b) => a.order - b.order).map(({ station, time }) => ({ station, time })),
+      ...trip,
+      stops: trip.stops.sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
     }))
     .filter((trip) => trip.stops.length >= 2);
 };
 
-const normalizeFares = (
-  rows: Record<string, unknown>[],
-  stationNameById: Map<string, string>,
-): SupabaseFare[] =>
+const normalizeFares = (rows: Record<string, unknown>[]): FareInfo[] =>
   rows
     .filter(isPublished)
     .map((row) => {
-      const departure =
-        readString(row, ['departure_station', 'from_station_name', 'from_name']) ??
-        stationNameById.get(readString(row, ['departure_station_id', 'from_station_id']) ?? '') ??
-        null;
-      const arrival =
-        readString(row, ['arrival_station', 'to_station_name', 'to_name']) ??
-        stationNameById.get(readString(row, ['arrival_station_id', 'to_station_id']) ?? '') ??
-        null;
-      const amount = readNumber(row, ['amount', 'price', 'fare']);
+      const lineCode = toLineCode(readString(row, ['line_code', 'line', 'code']));
+      const amount = readNumber(row, ['price_tnd', 'amount', 'price', 'fare']);
       const currency = readString(row, ['currency']) ?? 'TND';
 
-      if (!departure || !arrival || amount === null) {
+      if (!lineCode || amount === null || amount <= 0) {
         return null;
       }
 
-      return { departure, arrival, amount, currency } satisfies SupabaseFare;
+      return {
+        lineCode,
+        amount,
+        currency,
+        fareType: readString(row, ['fare_type', 'type']) ?? undefined,
+      } satisfies FareInfo;
     })
-    .filter((fare): fare is SupabaseFare => fare !== null);
+    .reduce<FareInfo[]>((acc, fare) => {
+      if (fare) {
+        acc.push(fare);
+      }
+      return acc;
+    }, []);
 
 const fetchTable = async (table: string): Promise<Record<string, unknown>[]> => {
   if (!supabase) {
@@ -240,7 +211,7 @@ export const loadTransitData = async (marche: MarcheType): Promise<TransitDataRe
       stations: STATIONS,
       lines: [],
       trips: await loadTripsForMarche(marche),
-      fares: [],
+      fares: await loadFaresFromCsv(),
       source: 'csv',
     };
   }
@@ -260,7 +231,7 @@ export const loadTransitData = async (marche: MarcheType): Promise<TransitDataRe
       const id = readString(row, ['id', 'station_id']);
       const name = readString(row, ['name', 'station_name', 'label']);
       if (id && name) {
-        stationNameById.set(id, name);
+        stationNameById.set(id, normalizeStationName(name));
       }
     });
 
@@ -273,23 +244,30 @@ export const loadTransitData = async (marche: MarcheType): Promise<TransitDataRe
         lineCodeById.set(id, code);
       }
     });
+
     const publishedLineStations = lineStationsRows.filter(isPublished);
     const supabaseTrips = normalizeTrips(schedulesRows, stationNameById, lineCodeById, marche);
-    const fares = normalizeFares(faresRows, stationNameById);
+    const fares = normalizeFares(faresRows);
 
     if (stations.length > 0 && supabaseTrips.length > 0) {
       const linesWithStops = lines.map((line) => ({
         ...line,
         hasStops: publishedLineStations.some((ls) => String(ls['line_id'] ?? '') === line.id),
       }));
-      return { stations, lines: linesWithStops.map(({ hasStops, ...line }) => line), trips: supabaseTrips, fares, source: 'supabase' };
+      return {
+        stations,
+        lines: linesWithStops.map(({ hasStops, ...line }) => line),
+        trips: supabaseTrips,
+        fares,
+        source: 'supabase',
+      };
     }
 
     return {
       stations: stations.length > 0 ? stations : STATIONS,
       lines,
       trips: await loadTripsForMarche(marche),
-      fares,
+      fares: fares.length > 0 ? fares : await loadFaresFromCsv(),
       source: 'csv',
     };
   } catch {
@@ -297,21 +275,8 @@ export const loadTransitData = async (marche: MarcheType): Promise<TransitDataRe
       stations: STATIONS,
       lines: [],
       trips: await loadTripsForMarche(marche),
-      fares: [],
+      fares: await loadFaresFromCsv(),
       source: 'csv',
     };
   }
-};
-
-export const findFareForRoute = (
-  fares: SupabaseFare[],
-  departure: string,
-  arrival: string,
-): SupabaseFare | null => {
-  const exact = fares.find((fare) => fare.departure === departure && fare.arrival === arrival);
-  if (exact) {
-    return exact;
-  }
-
-  return fares.find((fare) => fare.departure === arrival && fare.arrival === departure) ?? null;
 };

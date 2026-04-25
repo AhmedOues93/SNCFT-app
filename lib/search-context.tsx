@@ -1,6 +1,6 @@
 import React, { createContext, PropsWithChildren, useContext, useState } from 'react';
 
-import { MarcheType, RouteResult, TravelDirection } from '@/types';
+import { LineFilter, MarcheType, RouteResult } from '@/types';
 
 interface SearchState {
   departure: string;
@@ -8,8 +8,7 @@ interface SearchState {
   marche: MarcheType;
   date: Date;
   walkingMinutes: number;
-  travelDirection: TravelDirection;
-  lineCode: 'A' | 'D' | 'E';
+  lineFilter: LineFilter;
 }
 
 interface SearchContextType {
@@ -24,13 +23,12 @@ interface SearchContextType {
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
 
 const defaultSearch: SearchState = {
-  departure: 'Tunis',
+  departure: 'Bougatfa',
   arrival: 'Borj Cedria',
   marche: 'Hiver',
   date: new Date(),
   walkingMinutes: 0,
-  travelDirection: 'Aller',
-  lineCode: 'A',
+  lineFilter: 'ALL',
 };
 
 export const SearchProvider = ({ children }: PropsWithChildren) => {
