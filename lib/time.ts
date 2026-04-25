@@ -1,4 +1,3 @@
-import { isDirectionCompatible } from '@/lib/constants';
 import { RouteResult, TrainTrip } from '@/types';
 
 export const toMinutes = (hhmm: string): number => {
@@ -16,23 +15,24 @@ export const findNextTrips = (
   departureStation: string,
   arrivalStation: string,
   earliestMinute: number,
+  walkingMinutes: number,
 ): RouteResult[] => {
   const normalizedEarliestMinute = ((earliestMinute % (24 * 60)) + 24 * 60) % (24 * 60);
 
   const possible = trips
     .map((trip) => {
-      if (!isDirectionCompatible(trip.direction, departureStation, arrivalStation)) {
+      const departureIndex = trip.stops.findIndex((stop) => stop.station === departureStation);
+      const arrivalIndex = trip.stops.findIndex((stop) => stop.station === arrivalStation);
+
+      if (departureIndex < 0 || arrivalIndex <= departureIndex) {
         return null;
       }
 
-      const departure = trip.stops.find((stop) => stop.station === departureStation);
-      const arrival = trip.stops.find((stop) => stop.station === arrivalStation);
-      if (!departure || !arrival) {
-        return null;
-      }
-
+      const departure = trip.stops[departureIndex];
+      const arrival = trip.stops[arrivalIndex];
       const departureMinute = toMinutes(departure.time);
       const arrivalMinute = toMinutes(arrival.time);
+
       if (arrivalMinute <= departureMinute || departureMinute < normalizedEarliestMinute) {
         return null;
       }
@@ -43,6 +43,11 @@ export const findNextTrips = (
         departureTime: departure.time,
         arrivalTime: arrival.time,
         durationMinutes: calculateDuration(departure.time, arrival.time),
+        waitingMinutes: departureMinute - normalizedEarliestMinute,
+        walkingMinutes,
+        departureStation,
+        arrivalStation,
+        intermediateStops: trip.stops.slice(departureIndex + 1, arrivalIndex).map((stop) => stop.station),
       } satisfies RouteResult;
     })
     .filter((trip): trip is RouteResult => trip !== null)
@@ -52,3 +57,11 @@ export const findNextTrips = (
 };
 
 export const dateToMinuteOfDay = (date: Date): number => date.getHours() * 60 + date.getMinutes();
+
+export const formatDateFr = (date: Date): string =>
+  date.toLocaleDateString('fr-FR', {
+    weekday: 'long',
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric',
+  });

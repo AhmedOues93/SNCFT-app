@@ -1,5 +1,7 @@
 export type MarcheType = 'Hiver' | 'Été' | 'Ramadan';
 
+export type TravelDirection = 'Aller' | 'Retour';
+
 export type DirectionType =
   | 'Tunis → Borj Cedria'
   | 'Borj Cedria → Tunis'
@@ -22,6 +24,8 @@ export interface TrainTrip {
   trainNumber: string;
   direction: DirectionType;
   stops: TrainStop[];
+  lineCode?: string;
+  lineName?: string;
 }
 
 export interface RouteResult {
@@ -30,6 +34,13 @@ export interface RouteResult {
   departureTime: string;
   arrivalTime: string;
   durationMinutes: number;
+  waitingMinutes: number;
+  walkingMinutes: number;
+  departureStation: string;
+  arrivalStation: string;
+  intermediateStops: string[];
+  fareAmount?: number;
+  fareCurrency?: string;
 }
 
 export interface StationInfo {
@@ -37,4 +48,10 @@ export interface StationInfo {
   lat: number;
   lon: number;
   lines: string[];
+}
+
+export interface FavoriteRoute {
+  id: string;
+  departure: string;
+  arrival: string;
 }

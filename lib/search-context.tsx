@@ -1,6 +1,6 @@
 import React, { createContext, PropsWithChildren, useContext, useState } from 'react';
 
-import { MarcheType, RouteResult } from '@/types';
+import { MarcheType, RouteResult, TravelDirection } from '@/types';
 
 interface SearchState {
   departure: string;
@@ -8,6 +8,8 @@ interface SearchState {
   marche: MarcheType;
   date: Date;
   walkingMinutes: number;
+  travelDirection: TravelDirection;
+  lineCode: 'A' | 'D' | 'E';
 }
 
 interface SearchContextType {
@@ -15,6 +17,8 @@ interface SearchContextType {
   setSearch: (next: SearchState) => void;
   results: RouteResult[];
   setResults: (next: RouteResult[]) => void;
+  selectedResult: RouteResult | null;
+  setSelectedResult: (next: RouteResult | null) => void;
 }
 
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
@@ -25,14 +29,19 @@ const defaultSearch: SearchState = {
   marche: 'Hiver',
   date: new Date(),
   walkingMinutes: 0,
+  travelDirection: 'Aller',
+  lineCode: 'A',
 };
 
 export const SearchProvider = ({ children }: PropsWithChildren) => {
   const [search, setSearch] = useState<SearchState>(defaultSearch);
   const [results, setResults] = useState<RouteResult[]>([]);
+  const [selectedResult, setSelectedResult] = useState<RouteResult | null>(null);
 
   return (
-    <SearchContext.Provider value={{ search, setSearch, results, setResults }}>
+    <SearchContext.Provider
+      value={{ search, setSearch, results, setResults, selectedResult, setSelectedResult }}
+    >
       {children}
     </SearchContext.Provider>
   );
