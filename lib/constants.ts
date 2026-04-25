@@ -1,7 +1,15 @@
-import { DirectionType, MarcheType, StationInfo } from '@/types';
+import { DirectionType, MarcheType, StationInfo, TravelDirection } from '@/types';
 
 export const APP_DISCLAIMER =
   'Horaires basés sur les données statiques SNCFT. Retards et suppressions non inclus.';
+
+export const SNCFT_COLORS = {
+  primary: '#0b5ed7',
+  secondary: '#198754',
+  background: '#edf4ff',
+  text: '#0f172a',
+  muted: '#64748b',
+};
 
 export const DIRECTIONS: DirectionType[] = [
   'Tunis → Borj Cedria',
@@ -9,6 +17,8 @@ export const DIRECTIONS: DirectionType[] = [
   'Tunis → Erriadh',
   'Erriadh → Tunis',
 ];
+
+export const TRAVEL_DIRECTIONS: TravelDirection[] = ['Aller', 'Retour'];
 
 export const MARCHES: MarcheType[] = ['Hiver', 'Été', 'Ramadan'];
 
@@ -32,6 +42,11 @@ export const STATION_ORDER_BY_DIRECTION: Record<DirectionType, string[]> = {
   'Erriadh → Tunis': ['Erriadh', 'Borj Cedria', 'Hammam Lif', 'Rades', 'Tunis'],
 };
 
+export const DIRECTIONS_BY_TRAVEL_DIRECTION: Record<TravelDirection, DirectionType[]> = {
+  Aller: ['Tunis → Borj Cedria', 'Tunis → Erriadh'],
+  Retour: ['Borj Cedria → Tunis', 'Erriadh → Tunis'],
+};
+
 export const isDirectionCompatible = (
   direction: DirectionType,
   departure: string,
@@ -42,4 +57,20 @@ export const isDirectionCompatible = (
   const arrivalIndex = order.indexOf(arrival);
 
   return departureIndex !== -1 && arrivalIndex !== -1 && departureIndex < arrivalIndex;
+};
+
+export const getIntermediateStops = (
+  direction: DirectionType,
+  departure: string,
+  arrival: string,
+): string[] => {
+  const order = STATION_ORDER_BY_DIRECTION[direction];
+  const departureIndex = order.indexOf(departure);
+  const arrivalIndex = order.indexOf(arrival);
+
+  if (departureIndex === -1 || arrivalIndex === -1 || departureIndex >= arrivalIndex - 1) {
+    return [];
+  }
+
+  return order.slice(departureIndex + 1, arrivalIndex);
 };

@@ -24,15 +24,52 @@ const toMinutes = (hhmm: string): number => {
   return hours * 60 + minutes;
 };
 
+const splitCsvLine = (line: string): string[] => {
+  const cells: string[] = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i += 1) {
+    const char = line[i];
+
+    if (char === '"') {
+      const next = line[i + 1];
+      if (inQuotes && next === '"') {
+        current += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (char === ',' && !inQuotes) {
+      cells.push(current.trim());
+      current = '';
+      continue;
+    }
+
+    current += char;
+  }
+
+  cells.push(current.trim());
+  return cells;
+};
+
 const parseCsv = (content: string): CsvRow[] => {
   const lines = content
+    .replace(/^\uFEFF/, '')
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter((line) => Boolean(line) && !line.startsWith('#'));
 
+  if (lines.length <= 1) {
+    return [];
+  }
+
   return lines.slice(1).flatMap((line) => {
-    const columns = line.split(',').map((value) => value.trim());
-    if (columns.length !== 4) {
+    const columns = splitCsvLine(line);
+    if (columns.length < 4) {
       return [];
     }
 
