@@ -1,0 +1,500 @@
+line,season,direction,train_number,station_order,station,time,valid_from,valid_to,service_code
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,1,Tunis Ville,04:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,2,Saida Manoubia,04:29,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,3,Mellassine,04:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,4,Erraoudha,04:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,5,Le Bardo,04:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,6,El Bortal,04:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,7,Manouba,04:47,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,8,Les Oranges,04:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,9,Gobaa,04:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,601,10,Gobaa Ville,04:56,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,1,Tunis Ville,05:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,2,Saida Manoubia,05:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,3,Mellassine,05:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,4,Erraoudha,05:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,5,Le Bardo,05:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,6,El Bortal,05:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,7,Manouba,05:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,8,Les Oranges,05:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,9,Gobaa,05:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,603,10,Gobaa Ville,06:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,1,Tunis Ville,06:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,2,Saida Manoubia,06:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,3,Mellassine,06:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,4,Erraoudha,06:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,5,Le Bardo,06:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,6,El Bortal,06:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,7,Manouba,06:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,8,Les Oranges,06:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,9,Gobaa,06:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,605,10,Gobaa Ville,06:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,1,Tunis Ville,06:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,2,Saida Manoubia,06:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,3,Mellassine,06:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,4,Erraoudha,06:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,5,Le Bardo,07:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,6,El Bortal,07:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,7,Manouba,07:07,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,8,Les Oranges,07:09,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,9,Gobaa,07:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,607,10,Gobaa Ville,07:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,1,Tunis Ville,07:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,2,Saida Manoubia,07:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,3,Mellassine,07:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,4,Erraoudha,07:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,5,Le Bardo,07:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,6,El Bortal,07:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,7,Manouba,07:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,8,Les Oranges,07:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,9,Gobaa,07:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,609,10,Gobaa Ville,08:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,1,Tunis Ville,08:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,2,Saida Manoubia,08:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,3,Mellassine,08:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,4,Erraoudha,08:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,5,Le Bardo,08:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,6,El Bortal,08:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,7,Manouba,08:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,8,Les Oranges,08:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,9,Gobaa,08:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,611,10,Gobaa Ville,08:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,1,Tunis Ville,08:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,2,Saida Manoubia,08:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,3,Mellassine,08:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,4,Erraoudha,08:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,5,Le Bardo,09:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,6,El Bortal,09:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,7,Manouba,09:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,8,Les Oranges,09:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,9,Gobaa,09:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,613,10,Gobaa Ville,09:21,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,1,Tunis Ville,09:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,2,Saida Manoubia,09:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,3,Mellassine,09:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,4,Erraoudha,09:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,5,Le Bardo,09:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,6,El Bortal,09:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,7,Manouba,09:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,8,Les Oranges,09:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,9,Gobaa,09:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,615,10,Gobaa Ville,10:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,1,Tunis Ville,10:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,2,Saida Manoubia,10:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,3,Mellassine,10:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,4,Erraoudha,10:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,5,Le Bardo,10:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,6,El Bortal,10:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,7,Manouba,10:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,8,Les Oranges,10:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,9,Gobaa,10:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,617,10,Gobaa Ville,10:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,1,Tunis Ville,10:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,2,Saida Manoubia,10:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,3,Mellassine,10:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,4,Erraoudha,10:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,5,Le Bardo,11:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,6,El Bortal,11:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,7,Manouba,11:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,8,Les Oranges,11:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,9,Gobaa,11:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,619,10,Gobaa Ville,11:21,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,1,Tunis Ville,11:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,2,Saida Manoubia,11:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,3,Mellassine,11:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,4,Erraoudha,11:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,5,Le Bardo,11:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,6,El Bortal,11:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,7,Manouba,11:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,8,Les Oranges,11:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,9,Gobaa,11:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,621,10,Gobaa Ville,12:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,1,Tunis Ville,12:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,2,Saida Manoubia,12:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,3,Mellassine,12:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,4,Erraoudha,12:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,5,Le Bardo,12:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,6,El Bortal,12:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,7,Manouba,12:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,8,Les Oranges,12:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,9,Gobaa,12:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,623,10,Gobaa Ville,12:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,1,Tunis Ville,12:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,2,Saida Manoubia,12:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,3,Mellassine,12:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,4,Erraoudha,12:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,5,Le Bardo,13:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,6,El Bortal,13:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,7,Manouba,13:07,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,8,Les Oranges,13:09,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,9,Gobaa,13:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,625,10,Gobaa Ville,13:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,1,Tunis Ville,13:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,2,Saida Manoubia,13:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,3,Mellassine,13:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,4,Erraoudha,13:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,5,Le Bardo,13:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,6,El Bortal,13:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,7,Manouba,13:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,8,Les Oranges,13:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,9,Gobaa,13:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,627,10,Gobaa Ville,14:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,1,Tunis Ville,14:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,2,Saida Manoubia,14:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,3,Mellassine,14:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,4,Erraoudha,14:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,5,Le Bardo,14:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,6,El Bortal,14:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,7,Manouba,14:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,8,Les Oranges,14:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,9,Gobaa,14:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,629,10,Gobaa Ville,14:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,1,Tunis Ville,14:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,2,Saida Manoubia,14:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,3,Mellassine,14:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,4,Erraoudha,14:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,5,Le Bardo,15:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,6,El Bortal,15:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,7,Manouba,15:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,8,Les Oranges,15:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,9,Gobaa,15:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,631,10,Gobaa Ville,15:21,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,1,Tunis Ville,15:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,2,Saida Manoubia,15:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,3,Mellassine,15:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,4,Erraoudha,15:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,5,Le Bardo,15:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,6,El Bortal,15:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,7,Manouba,15:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,8,Les Oranges,15:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,9,Gobaa,15:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,633,10,Gobaa Ville,16:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,1,Tunis Ville,16:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,2,Saida Manoubia,16:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,3,Mellassine,16:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,4,Erraoudha,16:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,5,Le Bardo,16:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,6,El Bortal,16:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,7,Manouba,16:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,8,Les Oranges,16:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,9,Gobaa,16:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,635,10,Gobaa Ville,16:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,1,Tunis Ville,16:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,2,Saida Manoubia,16:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,3,Mellassine,16:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,4,Erraoudha,16:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,5,Le Bardo,17:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,6,El Bortal,17:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,7,Manouba,17:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,8,Les Oranges,17:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,9,Gobaa,17:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,637,10,Gobaa Ville,17:21,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,1,Tunis Ville,17:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,2,Saida Manoubia,17:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,3,Mellassine,17:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,4,Erraoudha,17:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,5,Le Bardo,17:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,6,El Bortal,17:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,7,Manouba,17:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,8,Les Oranges,17:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,9,Gobaa,17:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,639,10,Gobaa Ville,18:01,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,1,Tunis Ville,18:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,2,Saida Manoubia,18:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,3,Mellassine,18:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,4,Erraoudha,18:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,5,Le Bardo,18:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,6,El Bortal,18:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,7,Manouba,18:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,8,Les Oranges,18:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,9,Gobaa,18:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,641,10,Gobaa Ville,18:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,1,Tunis Ville,18:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,2,Saida Manoubia,18:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,3,Mellassine,18:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,4,Erraoudha,18:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,5,Le Bardo,19:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,6,El Bortal,19:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,7,Manouba,19:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,8,Les Oranges,19:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,9,Gobaa,19:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,643,10,Gobaa Ville,19:21,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,1,Tunis Ville,19:35,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,2,Saida Manoubia,19:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,3,Mellassine,19:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,4,Erraoudha,19:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,5,Le Bardo,19:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,6,El Bortal,19:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,7,Manouba,19:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,8,Les Oranges,19:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,9,Gobaa,20:02,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,645,10,Gobaa Ville,20:06,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,1,Tunis Ville,20:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,2,Saida Manoubia,20:14,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,3,Mellassine,20:17,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,4,Erraoudha,20:19,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,5,Le Bardo,20:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,6,El Bortal,20:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,7,Manouba,20:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,8,Les Oranges,20:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,9,Gobaa,20:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,647,10,Gobaa Ville,20:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,1,Tunis Ville,20:35,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,2,Saida Manoubia,20:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,3,Mellassine,20:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,4,Erraoudha,20:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,5,Le Bardo,20:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,6,El Bortal,20:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,7,Manouba,20:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,8,Les Oranges,20:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,9,Gobaa,21:02,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Tunis→Gobaa Ville,649,10,Gobaa Ville,21:06,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,1,Gobaa,05:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,2,Les Oranges,05:02,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,3,Manouba,05:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,4,El Bortal,05:07,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,5,Le Bardo,05:12,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,6,Erraoudha,05:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,7,Mellassine,05:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,8,Saida Manoubia,05:22,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,602,9,Tunis Ville,05:26,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,1,Gobaa Ville,05:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,2,Gobaa,05:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,3,Les Oranges,05:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,4,Manouba,05:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,5,El Bortal,05:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,6,Le Bardo,05:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,7,Erraoudha,05:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,8,Mellassine,05:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,9,Saida Manoubia,05:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,604,10,Tunis Ville,06:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,1,Gobaa Ville,06:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,2,Gobaa,06:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,3,Les Oranges,06:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,4,Manouba,06:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,5,El Bortal,06:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,6,Le Bardo,06:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,7,Erraoudha,06:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,8,Mellassine,06:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,9,Saida Manoubia,06:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,606,10,Tunis Ville,06:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,1,Gobaa Ville,06:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,2,Gobaa,06:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,3,Les Oranges,07:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,4,Manouba,07:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,5,El Bortal,07:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,6,Le Bardo,07:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,7,Erraoudha,07:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,8,Mellassine,07:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,9,Saida Manoubia,07:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,608,10,Tunis Ville,07:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,1,Gobaa Ville,07:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,2,Gobaa,07:32,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,3,Les Oranges,07:34,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,4,Manouba,07:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,5,El Bortal,07:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,6,Le Bardo,07:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,7,Erraoudha,07:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,8,Mellassine,07:52,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,9,Saida Manoubia,07:54,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,610,10,Tunis Ville,07:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,1,Gobaa Ville,08:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,2,Gobaa,08:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,3,Les Oranges,08:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,4,Manouba,08:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,5,El Bortal,08:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,6,Le Bardo,08:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,7,Erraoudha,08:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,8,Mellassine,08:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,9,Saida Manoubia,08:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,612,10,Tunis Ville,08:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,1,Gobaa Ville,08:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,2,Gobaa,08:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,3,Les Oranges,09:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,4,Manouba,09:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,5,El Bortal,09:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,6,Le Bardo,09:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,7,Erraoudha,09:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,8,Mellassine,09:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,9,Saida Manoubia,09:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,614,10,Tunis Ville,09:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,1,Gobaa Ville,09:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,2,Gobaa,09:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,3,Les Oranges,09:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,4,Manouba,09:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,5,El Bortal,09:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,6,Le Bardo,09:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,7,Erraoudha,09:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,8,Mellassine,09:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,9,Saida Manoubia,09:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,616,10,Tunis Ville,10:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,1,Gobaa Ville,10:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,2,Gobaa,10:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,3,Les Oranges,10:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,4,Manouba,10:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,5,El Bortal,10:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,6,Le Bardo,10:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,7,Erraoudha,10:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,8,Mellassine,10:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,9,Saida Manoubia,10:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,618,10,Tunis Ville,10:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,1,Gobaa Ville,10:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,2,Gobaa,10:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,3,Les Oranges,11:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,4,Manouba,11:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,5,El Bortal,11:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,6,Le Bardo,11:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,7,Erraoudha,11:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,8,Mellassine,11:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,9,Saida Manoubia,11:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,620,10,Tunis Ville,11:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,1,Gobaa Ville,11:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,2,Gobaa,11:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,3,Les Oranges,11:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,4,Manouba,11:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,5,El Bortal,11:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,6,Le Bardo,11:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,7,Erraoudha,11:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,8,Mellassine,11:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,9,Saida Manoubia,11:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,622,10,Tunis Ville,12:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,1,Gobaa Ville,12:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,2,Gobaa,12:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,3,Les Oranges,12:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,4,Manouba,12:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,5,El Bortal,12:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,6,Le Bardo,12:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,7,Erraoudha,12:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,8,Mellassine,12:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,9,Saida Manoubia,12:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,624,10,Tunis Ville,12:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,1,Gobaa Ville,12:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,2,Gobaa,12:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,3,Les Oranges,13:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,4,Manouba,13:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,5,El Bortal,13:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,6,Le Bardo,13:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,7,Erraoudha,13:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,8,Mellassine,13:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,9,Saida Manoubia,13:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,626,10,Tunis Ville,13:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,1,Gobaa Ville,13:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,2,Gobaa,13:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,3,Les Oranges,13:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,4,Manouba,13:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,5,El Bortal,13:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,6,Le Bardo,13:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,7,Erraoudha,13:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,8,Mellassine,13:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,9,Saida Manoubia,13:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,628,10,Tunis Ville,14:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,1,Gobaa Ville,14:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,2,Gobaa,14:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,3,Les Oranges,14:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,4,Manouba,14:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,5,El Bortal,14:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,6,Le Bardo,14:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,7,Erraoudha,14:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,8,Mellassine,14:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,9,Saida Manoubia,14:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,630,10,Tunis Ville,14:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,1,Gobaa Ville,14:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,2,Gobaa,14:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,3,Les Oranges,15:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,4,Manouba,15:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,5,El Bortal,15:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,6,Le Bardo,15:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,7,Erraoudha,15:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,8,Mellassine,15:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,9,Saida Manoubia,15:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,632,10,Tunis Ville,15:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,1,Gobaa Ville,15:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,2,Gobaa,15:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,3,Les Oranges,15:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,4,Manouba,15:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,5,El Bortal,15:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,6,Le Bardo,15:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,7,Erraoudha,15:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,8,Mellassine,15:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,9,Saida Manoubia,15:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,634,10,Tunis Ville,16:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,1,Gobaa Ville,16:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,2,Gobaa,16:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,3,Les Oranges,16:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,4,Manouba,16:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,5,El Bortal,16:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,6,Le Bardo,16:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,7,Erraoudha,16:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,8,Mellassine,16:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,9,Saida Manoubia,16:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,636,10,Tunis Ville,16:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,1,Gobaa Ville,16:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,2,Gobaa,16:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,3,Les Oranges,17:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,4,Manouba,17:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,5,El Bortal,17:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,6,Le Bardo,17:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,7,Erraoudha,17:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,8,Mellassine,17:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,9,Saida Manoubia,17:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,638,10,Tunis Ville,17:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,1,Gobaa Ville,17:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,2,Gobaa,17:37,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,3,Les Oranges,17:39,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,4,Manouba,17:42,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,5,El Bortal,17:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,6,Le Bardo,17:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,7,Erraoudha,17:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,8,Mellassine,17:57,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,9,Saida Manoubia,17:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,640,10,Tunis Ville,18:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,1,Gobaa Ville,18:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,2,Gobaa,18:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,3,Les Oranges,18:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,4,Manouba,18:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,5,El Bortal,18:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,6,Le Bardo,18:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,7,Erraoudha,18:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,8,Mellassine,18:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,9,Saida Manoubia,18:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,642,10,Tunis Ville,18:44,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,1,Gobaa Ville,18:50,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,2,Gobaa,18:58,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,3,Les Oranges,19:00,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,4,Manouba,19:03,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,5,El Bortal,19:05,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,6,Le Bardo,19:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,7,Erraoudha,19:16,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,8,Mellassine,19:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,9,Saida Manoubia,19:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,644,10,Tunis Ville,19:24,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,1,Gobaa Ville,19:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,2,Gobaa,19:33,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,3,Les Oranges,19:35,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,4,Manouba,19:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,5,El Bortal,19:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,6,Le Bardo,19:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,7,Erraoudha,19:51,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,8,Mellassine,19:53,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,9,Saida Manoubia,19:55,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,646,10,Tunis Ville,19:59,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,1,Gobaa Ville,20:15,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,2,Gobaa,20:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,3,Les Oranges,20:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,4,Manouba,20:28,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,5,El Bortal,20:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,6,Le Bardo,20:35,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,7,Erraoudha,20:41,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,8,Mellassine,20:43,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,9,Saida Manoubia,20:45,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,648,10,Tunis Ville,20:49,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,1,Gobaa Ville,21:10,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,2,Gobaa,21:18,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,3,Les Oranges,21:20,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,4,Manouba,21:23,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,5,El Bortal,21:25,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,6,Le Bardo,21:30,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,7,Erraoudha,21:36,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,8,Mellassine,21:38,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,9,Saida Manoubia,21:40,2025-09-01,2026-06-30,all
+D,hiver_2025_2026,Gobaa Ville→Tunis,650,10,Tunis Ville,21:44,2025-09-01,2026-06-30,all

@@ -1,0 +1,10 @@
+line,line_name,fare_type,sections,price_tnd,valid_from,valid_to
+D,Tunis - Goubaa,Plein tarif,1,0.700,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Demi tarif,1,0.500,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Tarif groupe,1,0.350,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Aller-retour plein tarif,1,1.300,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Abonnement hebdomadaire,1,6.500,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Abonnement mensuel,1,19.000,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Abonnement trimestriel,1,52.500,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Abonnement semestriel,1,99.500,2025-09-01,2026-06-30
+D,Tunis - Goubaa,Abonnement annuel,1,190.000,2025-09-01,2026-06-30

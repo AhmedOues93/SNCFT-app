@@ -1,0 +1,10 @@
+line,line_name,fare_type,sections,price_tnd,valid_from,valid_to
+E,Tunis - Bougatfa,Plein tarif,1,1.000,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Demi tarif,1,0.700,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Tarif groupe,1,0.500,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Aller-retour plein tarif,1,1.900,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Abonnement hebdomadaire,1,8.500,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Abonnement mensuel,1,26.000,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Abonnement trimestriel,1,66.000,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Abonnement semestriel,1,130.000,2025-09-01,2026-06-30
+E,Tunis - Bougatfa,Abonnement annuel,1,230.000,2025-09-01,2026-06-30

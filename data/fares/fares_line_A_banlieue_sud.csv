@@ -1,0 +1,25 @@
+line,line_name,fare_type,sections,price_tnd,valid_from,valid_to
+A,Banlieue Sud / Tunis - Erriadh,Plein tarif,1,0.500,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Plein tarif,2,0.650,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Plein tarif,3,0.850,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Demi tarif,1,0.400,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Demi tarif,2,0.450,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Demi tarif,3,0.500,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Tarif groupe,1,0.250,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Tarif groupe,2,0.300,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Tarif groupe,3,0.350,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement hebdomadaire,1,4.500,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement hebdomadaire,2,6.300,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement hebdomadaire,3,8.600,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement mensuel,1,16.200,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement mensuel,2,22.100,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement mensuel,3,31.800,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement trimestriel,1,44.500,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement trimestriel,2,60.700,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement trimestriel,3,87.500,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement semestriel,1,84.900,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement semestriel,2,115.800,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement semestriel,3,167.100,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement annuel,1,162.000,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement annuel,2,221.000,2025-09-01,2026-06-30
+A,Banlieue Sud / Tunis - Erriadh,Abonnement annuel,3,318.000,2025-09-01,2026-06-30

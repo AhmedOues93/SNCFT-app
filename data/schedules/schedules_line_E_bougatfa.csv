@@ -1,0 +1,869 @@
+line,season,direction,train_number,station_order,station,time,valid_from,valid_to,service_code
+E,hiver_2025_2026,Tunis→Bougatfa,401,1,Tunis,04:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,401,2,Sayda Manoubia,04:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,401,3,Ennajeh,04:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,401,4,Etayaran,04:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,401,5,Ezzouhour 2,04:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,401,6,El Hrayria,04:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,401,7,Bougatfa,04:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,1,Tunis,05:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,2,Sayda Manoubia,05:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,3,Ennajeh,05:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,4,Etayaran,05:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,5,Ezzouhour 2,05:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,6,El Hrayria,05:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,403,7,Bougatfa,05:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,1,Tunis,05:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,2,Sayda Manoubia,05:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,3,Ennajeh,05:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,4,Etayaran,05:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,5,Ezzouhour 2,05:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,6,El Hrayria,05:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,405,7,Bougatfa,05:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,1,Tunis,05:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,2,Sayda Manoubia,05:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,3,Ennajeh,05:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,4,Etayaran,05:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,5,Ezzouhour 2,05:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,6,El Hrayria,05:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,407,7,Bougatfa,05:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,1,Tunis,05:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,2,Sayda Manoubia,05:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,3,Ennajeh,05:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,4,Etayaran,05:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,5,Ezzouhour 2,05:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,6,El Hrayria,05:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,409,7,Bougatfa,05:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,1,Tunis,06:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,2,Sayda Manoubia,06:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,3,Ennajeh,06:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,4,Etayaran,06:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,5,Ezzouhour 2,06:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,6,El Hrayria,06:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,411,7,Bougatfa,06:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,1,Tunis,06:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,2,Sayda Manoubia,06:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,3,Ennajeh,06:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,4,Etayaran,06:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,5,Ezzouhour 2,06:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,6,El Hrayria,06:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,413,7,Bougatfa,06:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,1,Tunis,06:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,2,Sayda Manoubia,06:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,3,Ennajeh,06:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,4,Etayaran,06:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,5,Ezzouhour 2,06:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,6,El Hrayria,06:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,415,7,Bougatfa,06:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,1,Tunis,06:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,2,Sayda Manoubia,06:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,3,Ennajeh,06:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,4,Etayaran,06:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,5,Ezzouhour 2,06:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,6,El Hrayria,06:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,417,7,Bougatfa,06:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,1,Tunis,07:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,2,Sayda Manoubia,07:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,3,Ennajeh,07:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,4,Etayaran,07:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,5,Ezzouhour 2,07:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,6,El Hrayria,07:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,419,7,Bougatfa,07:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,1,Tunis,07:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,2,Sayda Manoubia,07:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,3,Ennajeh,07:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,4,Etayaran,07:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,5,Ezzouhour 2,07:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,6,El Hrayria,07:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,421,7,Bougatfa,07:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,1,Tunis,07:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,2,Sayda Manoubia,07:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,3,Ennajeh,07:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,4,Etayaran,07:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,5,Ezzouhour 2,07:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,6,El Hrayria,07:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,423,7,Bougatfa,07:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,1,Tunis,07:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,2,Sayda Manoubia,07:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,3,Ennajeh,07:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,4,Etayaran,07:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,5,Ezzouhour 2,07:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,6,El Hrayria,07:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,425,7,Bougatfa,07:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,1,Tunis,08:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,2,Sayda Manoubia,08:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,3,Ennajeh,08:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,4,Etayaran,08:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,5,Ezzouhour 2,08:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,6,El Hrayria,08:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,427,7,Bougatfa,08:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,1,Tunis,08:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,2,Sayda Manoubia,08:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,3,Ennajeh,08:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,4,Etayaran,08:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,5,Ezzouhour 2,08:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,6,El Hrayria,08:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,429,7,Bougatfa,08:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,1,Tunis,08:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,2,Sayda Manoubia,08:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,3,Ennajeh,08:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,4,Etayaran,08:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,5,Ezzouhour 2,08:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,6,El Hrayria,08:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,431,7,Bougatfa,08:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,1,Tunis,08:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,2,Sayda Manoubia,08:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,3,Ennajeh,08:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,4,Etayaran,08:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,5,Ezzouhour 2,08:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,6,El Hrayria,08:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,433,7,Bougatfa,08:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,1,Tunis,09:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,2,Sayda Manoubia,09:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,3,Ennajeh,09:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,4,Etayaran,09:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,5,Ezzouhour 2,09:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,6,El Hrayria,09:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,435,7,Bougatfa,09:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,1,Tunis,09:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,2,Sayda Manoubia,09:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,3,Ennajeh,09:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,4,Etayaran,09:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,5,Ezzouhour 2,09:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,6,El Hrayria,09:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,437,7,Bougatfa,09:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,1,Tunis,09:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,2,Sayda Manoubia,09:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,3,Ennajeh,09:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,4,Etayaran,09:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,5,Ezzouhour 2,09:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,6,El Hrayria,09:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,439,7,Bougatfa,09:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,1,Tunis,09:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,2,Sayda Manoubia,09:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,3,Ennajeh,09:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,4,Etayaran,09:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,5,Ezzouhour 2,09:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,6,El Hrayria,09:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,441,7,Bougatfa,09:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,1,Tunis,10:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,2,Sayda Manoubia,10:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,3,Ennajeh,10:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,4,Etayaran,10:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,5,Ezzouhour 2,10:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,6,El Hrayria,10:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,443,7,Bougatfa,10:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,1,Tunis,10:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,2,Sayda Manoubia,10:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,3,Ennajeh,10:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,4,Etayaran,10:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,5,Ezzouhour 2,10:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,6,El Hrayria,10:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,445,7,Bougatfa,10:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,1,Tunis,10:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,2,Sayda Manoubia,10:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,3,Ennajeh,10:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,4,Etayaran,10:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,5,Ezzouhour 2,10:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,6,El Hrayria,10:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,447,7,Bougatfa,10:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,1,Tunis,10:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,2,Sayda Manoubia,10:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,3,Ennajeh,10:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,4,Etayaran,10:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,5,Ezzouhour 2,10:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,6,El Hrayria,10:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,449,7,Bougatfa,10:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,1,Tunis,11:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,2,Sayda Manoubia,11:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,3,Ennajeh,11:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,4,Etayaran,11:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,5,Ezzouhour 2,11:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,6,El Hrayria,11:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,451,7,Bougatfa,11:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,1,Tunis,11:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,2,Sayda Manoubia,11:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,3,Ennajeh,11:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,4,Etayaran,11:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,5,Ezzouhour 2,11:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,6,El Hrayria,11:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,453,7,Bougatfa,11:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,1,Tunis,11:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,2,Sayda Manoubia,11:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,3,Ennajeh,11:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,4,Etayaran,11:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,5,Ezzouhour 2,11:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,6,El Hrayria,11:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,455,7,Bougatfa,11:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,1,Tunis,11:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,2,Sayda Manoubia,11:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,3,Ennajeh,11:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,4,Etayaran,11:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,5,Ezzouhour 2,11:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,6,El Hrayria,11:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,457,7,Bougatfa,11:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,1,Tunis,12:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,2,Sayda Manoubia,12:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,3,Ennajeh,12:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,4,Etayaran,12:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,5,Ezzouhour 2,12:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,6,El Hrayria,12:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,459,7,Bougatfa,12:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,1,Tunis,12:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,2,Sayda Manoubia,12:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,3,Ennajeh,12:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,4,Etayaran,12:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,5,Ezzouhour 2,12:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,6,El Hrayria,12:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,461,7,Bougatfa,12:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,1,Tunis,12:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,2,Sayda Manoubia,12:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,3,Ennajeh,12:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,4,Etayaran,12:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,5,Ezzouhour 2,12:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,6,El Hrayria,12:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,463,7,Bougatfa,12:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,1,Tunis,12:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,2,Sayda Manoubia,12:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,3,Ennajeh,12:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,4,Etayaran,12:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,5,Ezzouhour 2,12:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,6,El Hrayria,12:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,465,7,Bougatfa,12:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,1,Tunis,13:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,2,Sayda Manoubia,13:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,3,Ennajeh,13:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,4,Etayaran,13:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,5,Ezzouhour 2,13:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,6,El Hrayria,13:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,467,7,Bougatfa,13:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,1,Tunis,13:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,2,Sayda Manoubia,13:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,3,Ennajeh,13:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,4,Etayaran,13:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,5,Ezzouhour 2,13:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,6,El Hrayria,13:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,469,7,Bougatfa,13:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,1,Tunis,13:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,2,Sayda Manoubia,13:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,3,Ennajeh,13:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,4,Etayaran,13:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,5,Ezzouhour 2,13:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,6,El Hrayria,13:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,471,7,Bougatfa,13:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,1,Tunis,13:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,2,Sayda Manoubia,13:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,3,Ennajeh,13:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,4,Etayaran,13:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,5,Ezzouhour 2,13:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,6,El Hrayria,13:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,473,7,Bougatfa,13:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,1,Tunis,14:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,2,Sayda Manoubia,14:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,3,Ennajeh,14:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,4,Etayaran,14:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,5,Ezzouhour 2,14:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,6,El Hrayria,14:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,475,7,Bougatfa,14:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,1,Tunis,14:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,2,Sayda Manoubia,14:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,3,Ennajeh,14:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,4,Etayaran,14:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,5,Ezzouhour 2,14:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,6,El Hrayria,14:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,477,7,Bougatfa,14:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,1,Tunis,14:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,2,Sayda Manoubia,14:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,3,Ennajeh,14:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,4,Etayaran,14:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,5,Ezzouhour 2,14:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,6,El Hrayria,14:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,479,7,Bougatfa,14:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,1,Tunis,14:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,2,Sayda Manoubia,14:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,3,Ennajeh,14:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,4,Etayaran,14:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,5,Ezzouhour 2,14:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,6,El Hrayria,14:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,481,7,Bougatfa,14:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,1,Tunis,15:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,2,Sayda Manoubia,15:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,3,Ennajeh,15:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,4,Etayaran,15:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,5,Ezzouhour 2,15:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,6,El Hrayria,15:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,483,7,Bougatfa,15:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,1,Tunis,15:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,2,Sayda Manoubia,15:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,3,Ennajeh,15:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,4,Etayaran,15:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,5,Ezzouhour 2,15:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,6,El Hrayria,15:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,485,7,Bougatfa,15:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,1,Tunis,15:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,2,Sayda Manoubia,15:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,3,Ennajeh,15:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,4,Etayaran,15:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,5,Ezzouhour 2,15:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,6,El Hrayria,15:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,487,7,Bougatfa,15:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,1,Tunis,15:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,2,Sayda Manoubia,15:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,3,Ennajeh,15:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,4,Etayaran,15:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,5,Ezzouhour 2,15:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,6,El Hrayria,15:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,489,7,Bougatfa,15:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,1,Tunis,16:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,2,Sayda Manoubia,16:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,3,Ennajeh,16:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,4,Etayaran,16:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,5,Ezzouhour 2,16:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,6,El Hrayria,16:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,491,7,Bougatfa,16:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,1,Tunis,16:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,2,Sayda Manoubia,16:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,3,Ennajeh,16:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,4,Etayaran,16:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,5,Ezzouhour 2,16:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,6,El Hrayria,16:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,493,7,Bougatfa,16:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,1,Tunis,16:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,2,Sayda Manoubia,16:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,3,Ennajeh,16:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,4,Etayaran,16:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,5,Ezzouhour 2,16:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,6,El Hrayria,16:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,495,7,Bougatfa,16:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,1,Tunis,16:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,2,Sayda Manoubia,16:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,3,Ennajeh,16:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,4,Etayaran,16:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,5,Ezzouhour 2,16:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,6,El Hrayria,16:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,497,7,Bougatfa,16:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,1,Tunis,17:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,2,Sayda Manoubia,17:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,3,Ennajeh,17:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,4,Etayaran,17:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,5,Ezzouhour 2,17:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,6,El Hrayria,17:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,499,7,Bougatfa,17:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,1,Tunis,17:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,2,Sayda Manoubia,17:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,3,Ennajeh,17:26,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,4,Etayaran,17:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,5,Ezzouhour 2,17:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,6,El Hrayria,17:33,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,501,7,Bougatfa,17:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,1,Tunis,17:25,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,2,Sayda Manoubia,17:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,3,Ennajeh,17:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,4,Etayaran,17:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,5,Ezzouhour 2,17:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,6,El Hrayria,17:38,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,503,7,Bougatfa,17:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,1,Tunis,17:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,2,Sayda Manoubia,17:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,3,Ennajeh,17:46,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,4,Etayaran,17:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,5,Ezzouhour 2,17:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,6,El Hrayria,17:53,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,505,7,Bougatfa,17:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,1,Tunis,18:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,2,Sayda Manoubia,18:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,3,Ennajeh,18:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,4,Etayaran,18:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,5,Ezzouhour 2,18:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,6,El Hrayria,18:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,507,7,Bougatfa,18:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,1,Tunis,18:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,2,Sayda Manoubia,18:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,3,Ennajeh,18:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,4,Etayaran,18:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,5,Ezzouhour 2,18:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,6,El Hrayria,18:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,509,7,Bougatfa,18:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,1,Tunis,19:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,2,Sayda Manoubia,19:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,3,Ennajeh,19:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,4,Etayaran,19:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,5,Ezzouhour 2,19:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,6,El Hrayria,19:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,511,7,Bougatfa,19:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,1,Tunis,19:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,2,Sayda Manoubia,19:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,3,Ennajeh,19:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,4,Etayaran,19:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,5,Ezzouhour 2,19:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,6,El Hrayria,19:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,513,7,Bougatfa,19:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,1,Tunis,20:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,2,Sayda Manoubia,20:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,3,Ennajeh,20:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,4,Etayaran,20:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,5,Ezzouhour 2,20:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,6,El Hrayria,20:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,515,7,Bougatfa,20:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,1,Tunis,20:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,2,Sayda Manoubia,20:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,3,Ennajeh,20:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,4,Etayaran,20:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,5,Ezzouhour 2,20:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,6,El Hrayria,20:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,517,7,Bougatfa,20:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,1,Tunis,21:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,2,Sayda Manoubia,21:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,3,Ennajeh,21:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,4,Etayaran,21:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,5,Ezzouhour 2,21:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,6,El Hrayria,21:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,519,7,Bougatfa,21:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,1,Tunis,21:30,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,2,Sayda Manoubia,21:34,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,3,Ennajeh,21:36,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,4,Etayaran,21:39,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,5,Ezzouhour 2,21:41,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,6,El Hrayria,21:43,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,521,7,Bougatfa,21:45,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,1,Tunis,22:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,2,Sayda Manoubia,22:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,3,Ennajeh,22:06,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,4,Etayaran,22:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,5,Ezzouhour 2,22:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,6,El Hrayria,22:13,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Tunis→Bougatfa,523,7,Bougatfa,22:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,1,Bougatfa,05:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,2,El Hrayria,05:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,3,Ezzouhour 2,05:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,4,Etayaran,05:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,5,Ennajeh,05:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,6,Sayda Manoubia,05:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,402,7,Tunis,05:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,1,Bougatfa,05:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,2,El Hrayria,05:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,3,Ezzouhour 2,05:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,4,Etayaran,05:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,5,Ennajeh,05:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,6,Sayda Manoubia,05:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,404,7,Tunis,05:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,1,Bougatfa,05:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,2,El Hrayria,05:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,3,Ezzouhour 2,05:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,4,Etayaran,05:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,5,Ennajeh,05:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,6,Sayda Manoubia,05:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,406,7,Tunis,05:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,1,Bougatfa,05:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,2,El Hrayria,05:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,3,Ezzouhour 2,05:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,4,Etayaran,05:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,5,Ennajeh,05:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,6,Sayda Manoubia,06:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,408,7,Tunis,06:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,1,Bougatfa,06:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,2,El Hrayria,06:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,3,Ezzouhour 2,06:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,4,Etayaran,06:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,5,Ennajeh,06:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,6,Sayda Manoubia,06:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,410,7,Tunis,06:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,1,Bougatfa,06:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,2,El Hrayria,06:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,3,Ezzouhour 2,06:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,4,Etayaran,06:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,5,Ennajeh,06:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,6,Sayda Manoubia,06:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,412,7,Tunis,06:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,1,Bougatfa,06:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,2,El Hrayria,06:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,3,Ezzouhour 2,06:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,4,Etayaran,06:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,5,Ennajeh,06:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,6,Sayda Manoubia,06:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,414,7,Tunis,06:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,1,Bougatfa,06:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,2,El Hrayria,06:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,3,Ezzouhour 2,06:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,4,Etayaran,06:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,5,Ennajeh,06:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,6,Sayda Manoubia,07:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,416,7,Tunis,07:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,1,Bougatfa,07:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,2,El Hrayria,07:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,3,Ezzouhour 2,07:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,4,Etayaran,07:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,5,Ennajeh,07:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,6,Sayda Manoubia,07:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,418,7,Tunis,07:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,1,Bougatfa,07:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,2,El Hrayria,07:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,3,Ezzouhour 2,07:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,4,Etayaran,07:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,5,Ennajeh,07:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,6,Sayda Manoubia,07:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,420,7,Tunis,07:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,1,Bougatfa,07:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,2,El Hrayria,07:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,3,Ezzouhour 2,07:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,4,Etayaran,07:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,5,Ennajeh,07:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,6,Sayda Manoubia,07:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,422,7,Tunis,07:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,1,Bougatfa,07:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,2,El Hrayria,07:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,3,Ezzouhour 2,07:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,4,Etayaran,07:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,5,Ennajeh,07:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,6,Sayda Manoubia,08:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,424,7,Tunis,08:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,1,Bougatfa,08:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,2,El Hrayria,08:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,3,Ezzouhour 2,08:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,4,Etayaran,08:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,5,Ennajeh,08:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,6,Sayda Manoubia,08:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,426,7,Tunis,08:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,1,Bougatfa,08:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,2,El Hrayria,08:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,3,Ezzouhour 2,08:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,4,Etayaran,08:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,5,Ennajeh,08:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,6,Sayda Manoubia,08:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,428,7,Tunis,08:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,1,Bougatfa,08:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,2,El Hrayria,08:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,3,Ezzouhour 2,08:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,4,Etayaran,08:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,5,Ennajeh,08:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,6,Sayda Manoubia,08:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,430,7,Tunis,08:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,1,Bougatfa,08:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,2,El Hrayria,08:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,3,Ezzouhour 2,08:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,4,Etayaran,08:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,5,Ennajeh,08:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,6,Sayda Manoubia,09:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,432,7,Tunis,09:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,1,Bougatfa,09:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,2,El Hrayria,09:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,3,Ezzouhour 2,09:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,4,Etayaran,09:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,5,Ennajeh,09:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,6,Sayda Manoubia,09:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,434,7,Tunis,09:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,1,Bougatfa,09:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,2,El Hrayria,09:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,3,Ezzouhour 2,09:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,4,Etayaran,09:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,5,Ennajeh,09:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,6,Sayda Manoubia,09:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,436,7,Tunis,09:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,1,Bougatfa,09:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,2,El Hrayria,09:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,3,Ezzouhour 2,09:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,4,Etayaran,09:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,5,Ennajeh,09:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,6,Sayda Manoubia,09:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,438,7,Tunis,09:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,1,Bougatfa,09:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,2,El Hrayria,09:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,3,Ezzouhour 2,09:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,4,Etayaran,09:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,5,Ennajeh,09:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,6,Sayda Manoubia,10:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,440,7,Tunis,10:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,1,Bougatfa,10:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,2,El Hrayria,10:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,3,Ezzouhour 2,10:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,4,Etayaran,10:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,5,Ennajeh,10:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,6,Sayda Manoubia,10:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,442,7,Tunis,10:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,1,Bougatfa,10:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,2,El Hrayria,10:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,3,Ezzouhour 2,10:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,4,Etayaran,10:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,5,Ennajeh,10:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,6,Sayda Manoubia,10:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,444,7,Tunis,10:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,1,Bougatfa,10:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,2,El Hrayria,10:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,3,Ezzouhour 2,10:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,4,Etayaran,10:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,5,Ennajeh,10:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,6,Sayda Manoubia,10:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,446,7,Tunis,10:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,1,Bougatfa,10:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,2,El Hrayria,10:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,3,Ezzouhour 2,10:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,4,Etayaran,10:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,5,Ennajeh,10:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,6,Sayda Manoubia,11:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,448,7,Tunis,11:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,1,Bougatfa,11:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,2,El Hrayria,11:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,3,Ezzouhour 2,11:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,4,Etayaran,11:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,5,Ennajeh,11:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,6,Sayda Manoubia,11:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,450,7,Tunis,11:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,1,Bougatfa,11:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,2,El Hrayria,11:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,3,Ezzouhour 2,11:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,4,Etayaran,11:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,5,Ennajeh,11:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,6,Sayda Manoubia,11:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,452,7,Tunis,11:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,1,Bougatfa,11:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,2,El Hrayria,11:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,3,Ezzouhour 2,11:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,4,Etayaran,11:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,5,Ennajeh,11:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,6,Sayda Manoubia,11:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,454,7,Tunis,11:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,1,Bougatfa,11:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,2,El Hrayria,11:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,3,Ezzouhour 2,11:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,4,Etayaran,11:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,5,Ennajeh,11:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,6,Sayda Manoubia,12:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,456,7,Tunis,12:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,1,Bougatfa,12:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,2,El Hrayria,12:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,3,Ezzouhour 2,12:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,4,Etayaran,12:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,5,Ennajeh,12:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,6,Sayda Manoubia,12:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,458,7,Tunis,12:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,1,Bougatfa,12:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,2,El Hrayria,12:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,3,Ezzouhour 2,12:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,4,Etayaran,12:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,5,Ennajeh,12:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,6,Sayda Manoubia,12:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,460,7,Tunis,12:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,1,Bougatfa,12:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,2,El Hrayria,12:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,3,Ezzouhour 2,12:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,4,Etayaran,12:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,5,Ennajeh,12:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,6,Sayda Manoubia,12:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,462,7,Tunis,12:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,1,Bougatfa,12:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,2,El Hrayria,12:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,3,Ezzouhour 2,12:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,4,Etayaran,12:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,5,Ennajeh,12:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,6,Sayda Manoubia,13:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,464,7,Tunis,13:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,1,Bougatfa,13:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,2,El Hrayria,13:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,3,Ezzouhour 2,13:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,4,Etayaran,13:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,5,Ennajeh,13:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,6,Sayda Manoubia,13:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,466,7,Tunis,13:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,1,Bougatfa,13:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,2,El Hrayria,13:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,3,Ezzouhour 2,13:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,4,Etayaran,13:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,5,Ennajeh,13:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,6,Sayda Manoubia,13:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,468,7,Tunis,13:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,1,Bougatfa,13:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,2,El Hrayria,13:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,3,Ezzouhour 2,13:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,4,Etayaran,13:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,5,Ennajeh,13:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,6,Sayda Manoubia,13:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,470,7,Tunis,13:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,1,Bougatfa,13:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,2,El Hrayria,13:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,3,Ezzouhour 2,13:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,4,Etayaran,13:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,5,Ennajeh,13:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,6,Sayda Manoubia,14:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,472,7,Tunis,14:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,1,Bougatfa,14:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,2,El Hrayria,14:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,3,Ezzouhour 2,14:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,4,Etayaran,14:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,5,Ennajeh,14:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,6,Sayda Manoubia,14:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,474,7,Tunis,14:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,1,Bougatfa,14:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,2,El Hrayria,14:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,3,Ezzouhour 2,14:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,4,Etayaran,14:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,5,Ennajeh,14:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,6,Sayda Manoubia,14:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,476,7,Tunis,14:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,1,Bougatfa,14:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,2,El Hrayria,14:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,3,Ezzouhour 2,14:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,4,Etayaran,14:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,5,Ennajeh,14:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,6,Sayda Manoubia,14:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,478,7,Tunis,14:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,1,Bougatfa,14:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,2,El Hrayria,14:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,3,Ezzouhour 2,14:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,4,Etayaran,14:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,5,Ennajeh,14:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,6,Sayda Manoubia,15:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,480,7,Tunis,15:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,1,Bougatfa,15:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,2,El Hrayria,15:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,3,Ezzouhour 2,15:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,4,Etayaran,15:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,5,Ennajeh,15:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,6,Sayda Manoubia,15:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,482,7,Tunis,15:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,1,Bougatfa,15:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,2,El Hrayria,15:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,3,Ezzouhour 2,15:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,4,Etayaran,15:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,5,Ennajeh,15:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,6,Sayda Manoubia,15:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,484,7,Tunis,15:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,1,Bougatfa,15:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,2,El Hrayria,15:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,3,Ezzouhour 2,15:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,4,Etayaran,15:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,5,Ennajeh,15:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,6,Sayda Manoubia,15:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,486,7,Tunis,15:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,1,Bougatfa,15:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,2,El Hrayria,15:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,3,Ezzouhour 2,15:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,4,Etayaran,15:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,5,Ennajeh,15:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,6,Sayda Manoubia,16:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,488,7,Tunis,16:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,1,Bougatfa,16:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,2,El Hrayria,16:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,3,Ezzouhour 2,16:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,4,Etayaran,16:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,5,Ennajeh,16:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,6,Sayda Manoubia,16:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,490,7,Tunis,16:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,1,Bougatfa,16:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,2,El Hrayria,16:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,3,Ezzouhour 2,16:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,4,Etayaran,16:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,5,Ennajeh,16:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,6,Sayda Manoubia,16:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,492,7,Tunis,16:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,1,Bougatfa,16:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,2,El Hrayria,16:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,3,Ezzouhour 2,16:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,4,Etayaran,16:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,5,Ennajeh,16:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,6,Sayda Manoubia,16:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,494,7,Tunis,16:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,1,Bougatfa,16:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,2,El Hrayria,16:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,3,Ezzouhour 2,16:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,4,Etayaran,16:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,5,Ennajeh,16:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,6,Sayda Manoubia,17:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,496,7,Tunis,17:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,1,Bougatfa,17:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,2,El Hrayria,17:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,3,Ezzouhour 2,17:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,4,Etayaran,17:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,5,Ennajeh,17:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,6,Sayda Manoubia,17:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,498,7,Tunis,17:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,1,Bougatfa,17:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,2,El Hrayria,17:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,3,Ezzouhour 2,17:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,4,Etayaran,17:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,5,Ennajeh,17:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,6,Sayda Manoubia,17:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,500,7,Tunis,17:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,1,Bougatfa,17:40,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,2,El Hrayria,17:42,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,3,Ezzouhour 2,17:44,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,4,Etayaran,17:47,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,5,Ennajeh,17:49,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,6,Sayda Manoubia,17:51,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,502,7,Tunis,17:55,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,1,Bougatfa,17:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,2,El Hrayria,17:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,3,Ezzouhour 2,17:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,4,Etayaran,17:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,5,Ennajeh,17:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,6,Sayda Manoubia,18:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,504,7,Tunis,18:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,1,Bougatfa,18:00,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,2,El Hrayria,18:02,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,3,Ezzouhour 2,18:04,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,4,Etayaran,18:07,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,5,Ennajeh,18:09,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,6,Sayda Manoubia,18:11,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,506,7,Tunis,18:15,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,1,Bougatfa,18:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,2,El Hrayria,18:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,3,Ezzouhour 2,18:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,4,Etayaran,18:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,5,Ennajeh,18:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,6,Sayda Manoubia,18:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,508,7,Tunis,18:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,1,Bougatfa,18:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,2,El Hrayria,18:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,3,Ezzouhour 2,18:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,4,Etayaran,18:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,5,Ennajeh,18:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,6,Sayda Manoubia,19:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,510,7,Tunis,19:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,1,Bougatfa,19:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,2,El Hrayria,19:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,3,Ezzouhour 2,19:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,4,Etayaran,19:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,5,Ennajeh,19:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,6,Sayda Manoubia,19:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,512,7,Tunis,19:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,1,Bougatfa,19:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,2,El Hrayria,19:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,3,Ezzouhour 2,19:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,4,Etayaran,19:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,5,Ennajeh,19:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,6,Sayda Manoubia,20:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,514,7,Tunis,20:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,1,Bougatfa,20:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,2,El Hrayria,20:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,3,Ezzouhour 2,20:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,4,Etayaran,20:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,5,Ennajeh,20:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,6,Sayda Manoubia,20:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,516,7,Tunis,20:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,1,Bougatfa,20:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,2,El Hrayria,20:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,3,Ezzouhour 2,20:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,4,Etayaran,20:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,5,Ennajeh,20:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,6,Sayda Manoubia,21:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,518,7,Tunis,21:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,1,Bougatfa,21:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,2,El Hrayria,21:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,3,Ezzouhour 2,21:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,4,Etayaran,21:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,5,Ennajeh,21:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,6,Sayda Manoubia,21:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,520,7,Tunis,21:35,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,1,Bougatfa,21:50,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,2,El Hrayria,21:52,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,3,Ezzouhour 2,21:54,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,4,Etayaran,21:57,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,5,Ennajeh,21:59,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,6,Sayda Manoubia,22:01,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,522,7,Tunis,22:05,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,1,Bougatfa,22:20,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,2,El Hrayria,22:22,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,3,Ezzouhour 2,22:24,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,4,Etayaran,22:27,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,5,Ennajeh,22:29,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,6,Sayda Manoubia,22:31,2025-09-01,2026-06-30,all
+E,hiver_2025_2026,Bougatfa→Tunis,524,7,Tunis,22:35,2025-09-01,2026-06-30,all
