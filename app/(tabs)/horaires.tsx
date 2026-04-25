@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
 import { Card } from '@/components/Card';
-import { DIRECTIONS, MARCHES, SNCFT_COLORS, STATIONS } from '@/lib/constants';
+import { MARCHES, SNCFT_COLORS, STATIONS } from '@/lib/constants';
 import { loadTransitData } from '@/lib/supabase-services';
 import { useSearch } from '@/lib/search-context';
 import { DirectionType, MarcheType, TrainTrip } from '@/types';
@@ -45,15 +45,20 @@ export default function HorairesScreen() {
     [directionFilter, stationFilter, trips],
   );
 
+  const directions = useMemo(
+    () => [...new Set(trips.map((trip) => trip.direction))].sort((a, b) => a.localeCompare(b, 'fr')),
+    [trips],
+  );
+
   const grouped = useMemo(
     () =>
-      DIRECTIONS.map((direction) => ({
+      directions.map((direction) => ({
         direction,
         trips: filteredTrips
           .filter((trip) => trip.direction === direction)
           .sort((a, b) => (a.stops[0]?.time ?? '').localeCompare(b.stops[0]?.time ?? '')),
       })),
-    [filteredTrips],
+    [directions, filteredTrips],
   );
 
   return (
@@ -76,7 +81,7 @@ export default function HorairesScreen() {
         <View style={styles.pickerWrap}>
           <Picker selectedValue={directionFilter} onValueChange={(value) => setDirectionFilter(value)}>
             <Picker.Item label="Toutes" value={TOUS} />
-            {DIRECTIONS.map((direction) => (
+            {directions.map((direction) => (
               <Picker.Item key={direction} label={direction} value={direction} />
             ))}
           </Picker>

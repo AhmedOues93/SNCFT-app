@@ -5,12 +5,12 @@ import { Picker } from '@react-native-picker/picker';
 import { Card } from '@/components/Card';
 import { SNCFT_COLORS, STATION_ORDER_BY_DIRECTION } from '@/lib/constants';
 import { loadTransitData } from '@/lib/supabase-services';
-import { DirectionType, MarcheType, StationInfo } from '@/types';
+import { MarcheType, StationInfo } from '@/types';
 
-const directionOptions = Object.keys(STATION_ORDER_BY_DIRECTION) as DirectionType[];
+const directionOptions = Object.keys(STATION_ORDER_BY_DIRECTION);
 
 export default function StationsScreen() {
-  const [direction, setDirection] = useState<DirectionType>('Tunis → Borj Cedria');
+  const [direction, setDirection] = useState<string>(directionOptions[0] ?? '');
   const [stations, setStations] = useState<StationInfo[]>([]);
 
   useEffect(() => {
